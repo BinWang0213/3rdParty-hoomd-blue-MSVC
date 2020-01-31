@@ -65,6 +65,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;WIN64;NDEBUG;_CONSOLE;ENABLE_CUDA;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)$(ProjectName);C:\Users\PoreSimPC_New\Anaconda3\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -81,13 +82,23 @@
     <CudaCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CachedAllocator.h" />
     <ClInclude Include="ExecutionConfiguration.h" />
     <ClInclude Include="GPUArray.h" />
     <ClInclude Include="GPUVector.h" />
+    <ClInclude Include="HOOMDMath.h" />
+    <ClInclude Include="MemoryTraceback.h" />
+    <ClInclude Include="Messenger.h" />
+    <ClInclude Include="MPIConfiguration.h" />
     <ClInclude Include="tools.h" />
+    <ClInclude Include="VectorMath.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ExecutionConfiguration.cc" />
+    <ClCompile Include="HOOMDMath.cc" />
+    <ClCompile Include="MemoryTraceback.cc" />
+    <ClCompile Include="Messenger.cc" />
+    <ClCompile Include="MPIConfiguration.cc" />
     <ClCompile Include="tools.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

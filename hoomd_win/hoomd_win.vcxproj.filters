@@ -13,6 +13,18 @@
     <Filter Include="Source Files\common">
       <UniqueIdentifier>{ecd35e9c-b20d-4eaf-adc3-b693dc5c7948}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\memory">
+      <UniqueIdentifier>{7875ac8b-6258-4506-8ac0-a15aa3c21cb6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\memory">
+      <UniqueIdentifier>{d44b2692-aa63-4f2d-90cb-66a2692b82b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{045f5732-0bf2-4fdc-8330-ac9eb6dc220d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{78b4aa6f-3bdc-4893-8c8e-4af275979521}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUArray.h">
@@ -27,6 +39,24 @@
     <ClInclude Include="ExecutionConfiguration.h">
       <Filter>Header Files\common</Filter>
     </ClInclude>
+    <ClInclude Include="HOOMDMath.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="CachedAllocator.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="MPIConfiguration.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryTraceback.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Messenger.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorMath.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
@@ -37,6 +67,18 @@
     </ClCompile>
     <ClCompile Include="ExecutionConfiguration.cc">
       <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="HOOMDMath.cc">
+      <Filter>Source Files\common</Filter>
+    </ClCompile>
+    <ClCompile Include="MPIConfiguration.cc">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryTraceback.cc">
+      <Filter>Source Files\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="Messenger.cc">
+      <Filter>Source Files\utils</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
