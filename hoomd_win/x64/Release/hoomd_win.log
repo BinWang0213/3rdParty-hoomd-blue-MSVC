@@ -138,7 +138,36 @@ f:\hoomd_win\hoomd_win\executionconfiguration.h(369): warning C4251: 'ExecutionC
 f:\hoomd_win\hoomd_win\executionconfiguration.h(147): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
 f:\hoomd_win\hoomd_win\executionconfiguration.h(162): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\executionconfiguration.h(172): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-f:\hoomd_win\hoomd_win\executionconfiguration.cc(7): fatal error C1083: Cannot open include file: 'HOOMDVersion.h': No such file or directory
+f:\hoomd_win\hoomd_win\cachedallocator.h(85): warning C4244: 'argument': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(240): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(253): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(419): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(644): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(675): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(682): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(704): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(731): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\executionconfiguration.cc(739): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\cachedallocator.h(175): warning C4244: 'initializing': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data
+  f:\hoomd_win\hoomd_win\cachedallocator.h(85): note: see reference to function template instantiation 'T *CachedAllocator::getTemporaryBuffer<char>(unsigned int)' being compiled
+          with
+          [
+              T=char
+          ]
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1560): note: see reference to class template instantiation 'pybind11::detail::descr<8>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1558): note: see reference to class template instantiation 'pybind11::detail::descr<5>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1113): note: see reference to class template instantiation 'pybind11::detail::descr<7>' being compiled
+f:\hoomd_win\hoomd_win\cachedallocator.h(190): warning C4244: '=': conversion from '_Ty1' to 'unsigned int', possible loss of data
+          with
+          [
+              _Ty1=ptrdiff_t
+          ]
+f:\hoomd_win\hoomd_win\cachedallocator.h(208): warning C4244: '+=': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data
+f:\hoomd_win\hoomd_win\cachedallocator.h(222): warning C4244: '-=': conversion from '_Ty1' to 'unsigned int', possible loss of data
+          with
+          [
+              _Ty1=ptrdiff_t
+          ]
   HOOMDMath.cc
 f:\hoomd_win\hoomd_win\vectormath.h(776): warning C4244: 'argument': conversion from 'double' to 'const Real', possible loss of data
           with
@@ -199,6 +228,7 @@ f:\hoomd_win\hoomd_win\vectormath.h(776): warning C4244: 'argument': conversion 
   f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1560): note: see reference to class template instantiation 'pybind11::detail::descr<8>' being compiled
   f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1558): note: see reference to class template instantiation 'pybind11::detail::descr<5>' being compiled
   f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1113): note: see reference to class template instantiation 'pybind11::detail::descr<7>' being compiled
+  HOOMDVersion.cc
   MemoryTraceback.cc
 f:\hoomd_win\hoomd_win\messenger.h(267): warning C4251: 'Messenger::m_mpi_config': class 'std::shared_ptr<MPIConfiguration>' needs to have dll-interface to be used by clients of class 'Messenger'
   f:\hoomd_win\hoomd_win\messenger.h(106): note: see declaration of 'std::shared_ptr<MPIConfiguration>'

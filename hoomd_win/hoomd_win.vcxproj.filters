@@ -33,9 +33,6 @@
     <ClInclude Include="GPUVector.h">
       <Filter>Header Files\common</Filter>
     </ClInclude>
-    <ClInclude Include="tools.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="ExecutionConfiguration.h">
       <Filter>Header Files\common</Filter>
     </ClInclude>
@@ -57,14 +54,12 @@
     <ClInclude Include="VectorMath.h">
       <Filter>Header Files\common</Filter>
     </ClInclude>
+    <ClInclude Include="HOOMDVersion.h" />
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="tools.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="ExecutionConfiguration.cc">
       <Filter>Source Files\common</Filter>
     </ClCompile>
@@ -78,6 +73,9 @@
       <Filter>Source Files\memory</Filter>
     </ClCompile>
     <ClCompile Include="Messenger.cc">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="HOOMDVersion.cc">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
   </ItemGroup>

@@ -87,19 +87,19 @@
     <ClInclude Include="GPUArray.h" />
     <ClInclude Include="GPUVector.h" />
     <ClInclude Include="HOOMDMath.h" />
+    <ClInclude Include="HOOMDVersion.h" />
     <ClInclude Include="MemoryTraceback.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="MPIConfiguration.h" />
-    <ClInclude Include="tools.h" />
     <ClInclude Include="VectorMath.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ExecutionConfiguration.cc" />
     <ClCompile Include="HOOMDMath.cc" />
+    <ClCompile Include="HOOMDVersion.cc" />
     <ClCompile Include="MemoryTraceback.cc" />
     <ClCompile Include="Messenger.cc" />
     <ClCompile Include="MPIConfiguration.cc" />
-    <ClCompile Include="tools.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
