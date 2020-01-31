@@ -55,6 +55,9 @@
       <Filter>Header Files\common</Filter>
     </ClInclude>
     <ClInclude Include="HOOMDVersion.h" />
+    <ClInclude Include="ClockSource.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
@@ -76,6 +79,9 @@
       <Filter>Source Files\utils</Filter>
     </ClCompile>
     <ClCompile Include="HOOMDVersion.cc">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ClockSource.cc">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
   </ItemGroup>
