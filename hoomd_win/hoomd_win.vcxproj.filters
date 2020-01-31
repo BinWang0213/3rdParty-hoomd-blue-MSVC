@@ -66,6 +66,9 @@
     <ClInclude Include="..\test\test_gpu_array.cuh">
       <Filter>Testing Files</Filter>
     </ClInclude>
+    <ClInclude Include="GlobalArray.h">
+      <Filter>Header Files\common</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
