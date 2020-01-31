@@ -1450,8 +1450,9 @@ public:
     }
 
     explicit operator type*() { return this->value; }
-    explicit operator type&() { return *(this->value); }
-    explicit operator holder_type*() { return std::addressof(holder); }
+    //explicit operator type&() { return *(this->value); }
+	explicit operator type&() { *((type *)(this->value)); }
+	explicit operator holder_type*() { return std::addressof(holder); }
 
     // Workaround for Intel compiler bug
     // see pybind11 issue 94

@@ -25,6 +25,9 @@
     <Filter Include="Source Files\utils">
       <UniqueIdentifier>{78b4aa6f-3bdc-4893-8c8e-4af275979521}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Testing Files">
+      <UniqueIdentifier>{979804e2-9a46-4517-8bed-541f6831c7e3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUArray.h">
@@ -54,13 +57,21 @@
     <ClInclude Include="VectorMath.h">
       <Filter>Header Files\common</Filter>
     </ClInclude>
-    <ClInclude Include="HOOMDVersion.h" />
     <ClInclude Include="ClockSource.h">
       <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="HOOMDVersion.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\test\test_gpu_array.cuh">
+      <Filter>Testing Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
+    <CudaCompile Include="..\test\test_gpu_array.cu">
+      <Filter>Testing Files</Filter>
+    </CudaCompile>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ExecutionConfiguration.cc">

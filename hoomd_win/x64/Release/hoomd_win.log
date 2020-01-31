@@ -1,4 +1,11 @@
-﻿  MemoryTraceback.cc
+﻿  Compiling CUDA source file main.cpp...
+  
+  F:\hoomd_win\hoomd_win>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -IF:\hoomd_win\hoomd_win -IC:\Users\PoreSimPC_New\Anaconda3\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -DENABLE_CUDA -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc141.pdb /FS /Zi  /MD " -o x64\Release\main.cpp.obj "F:\hoomd_win\hoomd_win\main.cpp" 
+F:/hoomd_win/hoomd_win/main.cpp(7): warning : variable "a" was declared but never referenced
+F:/hoomd_win/hoomd_win/main.cpp(8): warning : variable "b" was declared but never referenced
+F:/hoomd_win/hoomd_win/main.cpp(9): warning : variable "c" was declared but never referenced
+  main.cpp
+  MemoryTraceback.cc
 f:\hoomd_win\hoomd_win\messenger.h(267): warning C4251: 'Messenger::m_mpi_config': class 'std::shared_ptr<MPIConfiguration>' needs to have dll-interface to be used by clients of class 'Messenger'
   f:\hoomd_win\hoomd_win\messenger.h(106): note: see declaration of 'std::shared_ptr<MPIConfiguration>'
 f:\hoomd_win\hoomd_win\messenger.h(273): warning C4251: 'Messenger::m_streambuf_out': class 'std::shared_ptr<std::streambuf>' needs to have dll-interface to be used by clients of class 'Messenger'
@@ -59,4 +66,10 @@ f:\hoomd_win\hoomd_win\memorytraceback.h(46): warning C4251: 'MemoryTraceback::m
               _Kty=std::pair<const void *,unsigned int>,
               _Ty=std::string
           ]
-LINK : fatal error LNK1104: cannot open file 'python37.lib'
+     Creating library F:\hoomd_win\x64\Release\hoomd_win.lib and object F:\hoomd_win\x64\Release\hoomd_win.exp
+  Generating code
+  0 of 3663 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  hoomd_win.vcxproj -> F:\hoomd_win\x64\Release\hoomd_win.exe
