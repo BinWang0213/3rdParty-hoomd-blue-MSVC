@@ -35,7 +35,8 @@
     }
 
 //! CachedAllocator: a simple allocator for caching allocation requests
-class __attribute__((visibility("default"))) CachedAllocator
+//class __attribute__((visibility("default"))) CachedAllocator
+class CachedAllocator
     {
     public:
          // needed by thrust
