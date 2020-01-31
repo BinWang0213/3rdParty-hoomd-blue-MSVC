@@ -1,20 +1,4 @@
-﻿  Compiling CUDA source file main.cpp...
-  
-  F:\hoomd_win\hoomd_win>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_35,code=\"sm_35,compute_35\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -IF:\hoomd_win\hoomd_win -IC:\Users\PoreSimPC_New\Anaconda3\include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -DENABLE_CUDA -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc141.pdb /FS /Zi  /MD " -o x64\Release\main.cpp.obj "F:\hoomd_win\hoomd_win\main.cpp" 
-F:/hoomd_win/hoomd_win/main.cpp(8): warning : variable "a" was declared but never referenced
-F:/hoomd_win/hoomd_win/main.cpp(9): warning : variable "b" was declared but never referenced
-F:/hoomd_win/hoomd_win/main.cpp(10): warning : variable "c" was declared but never referenced
-  main.cpp
-  ExecutionConfiguration.cc
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C2039: 'sincosf': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C3861: 'sincosf': identifier not found
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2039: 'sincos': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2665: 'fast::sincos': none of the 2 overloads could convert all the argument types
-  f:\hoomd_win\hoomd_win\hoomdmath.h(454): note: could be 'void fast::sincos(double,double &,double &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(444): note: or       'void fast::sincos(float,float &,float &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(461): note: while trying to match the argument list '(double, double *, double *)'
-f:\hoomd_win\hoomd_win\hoomdmath.h(473): error C2065: 'M_PI': undeclared identifier
-f:\hoomd_win\hoomd_win\hoomdmath.h(485): error C2065: 'M_PI': undeclared identifier
+﻿  ExecutionConfiguration.cc
 f:\hoomd_win\hoomd_win\messenger.h(267): warning C4251: 'Messenger::m_mpi_config': class 'std::shared_ptr<MPIConfiguration>' needs to have dll-interface to be used by clients of class 'Messenger'
   f:\hoomd_win\hoomd_win\messenger.h(106): note: see declaration of 'std::shared_ptr<MPIConfiguration>'
 f:\hoomd_win\hoomd_win\messenger.h(273): warning C4251: 'Messenger::m_streambuf_out': class 'std::shared_ptr<std::streambuf>' needs to have dll-interface to be used by clients of class 'Messenger'
@@ -156,25 +140,66 @@ f:\hoomd_win\hoomd_win\executionconfiguration.h(162): warning C4267: 'initializi
 f:\hoomd_win\hoomd_win\executionconfiguration.h(172): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\executionconfiguration.cc(7): fatal error C1083: Cannot open include file: 'HOOMDVersion.h': No such file or directory
   HOOMDMath.cc
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C2039: 'sincosf': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C3861: 'sincosf': identifier not found
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2039: 'sincos': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2665: 'fast::sincos': none of the 2 overloads could convert all the argument types
-  f:\hoomd_win\hoomd_win\hoomdmath.h(454): note: could be 'void fast::sincos(double,double &,double &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(444): note: or       'void fast::sincos(float,float &,float &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(461): note: while trying to match the argument list '(double, double *, double *)'
-f:\hoomd_win\hoomd_win\hoomdmath.h(473): error C2065: 'M_PI': undeclared identifier
-f:\hoomd_win\hoomd_win\hoomdmath.h(485): error C2065: 'M_PI': undeclared identifier
+f:\hoomd_win\hoomd_win\vectormath.h(776): warning C4244: 'argument': conversion from 'double' to 'const Real', possible loss of data
+          with
+          [
+              Real=float
+          ]
+  f:\hoomd_win\hoomd_win\vectormath.h(775): note: while compiling class template member function 'quat<float> quat<float>::fromAxisAngle(const vec3<float> &,const Real &)'
+          with
+          [
+              Real=float
+          ]
+  f:\hoomd_win\hoomd_win\hoomdmath.cc(154): note: see reference to function template instantiation 'quat<float> quat<float>::fromAxisAngle(const vec3<float> &,const Real &)' being compiled
+          with
+          [
+              Real=float
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits(1430): note: see reference to class template instantiation 'quat<float>' being compiled
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits(1430): note: see reference to class template instantiation 'std::is_base_of<pybind11::detail::pyobject_tag,quat<float>>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1441): note: see reference to class template instantiation 'std::is_base_of<pybind11::detail::type_caster_base<type>,pybind11::detail::type_caster<type,void>>' being compiled
+          with
+          [
+              type=quat<float>
+          ]
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1515): note: see reference to class template instantiation 'pybind11::detail::copyable_holder_caster<type,holder_type>' being compiled
+          with
+          [
+              type=quat<float>,
+              holder_type=std::shared_ptr<quat<float>>
+          ]
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.16.27023\include\type_traits(1430): note: see reference to class template instantiation 'pybind11::detail::type_caster<holder,void>' being compiled
+          with
+          [
+              holder=std::shared_ptr<quat<float>>
+          ]
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1552): note: see reference to class template instantiation 'std::is_base_of<pybind11::detail::copyable_holder_caster<type,holder_type>,pybind11::detail::type_caster<holder,void>>' being compiled
+          with
+          [
+              type=quat<float>,
+              holder_type=std::shared_ptr<quat<float>>,
+              holder=std::shared_ptr<quat<float>>
+          ]
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\detail\common.h(561): note: see reference to class template instantiation 'pybind11::detail::is_holder_type<type_,std::shared_ptr<quat<float>>>' being compiled
+          with
+          [
+              type_=quat<float>
+          ]
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\pybind11.h(1050): note: see reference to class template instantiation 'pybind11::detail::exactly_one<pybind11::class_<quat<float>,std::shared_ptr<quat<float>>>::is_holder,std::unique_ptr<quat<float>,std::default_delete<_Ty>>,std::shared_ptr<_Ty>>' being compiled
+          with
+          [
+              _Ty=quat<float>
+          ]
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\pybind11.h(1050): note: see reference to alias template instantiation 'pybind11::detail::exactly_one_t<pybind11::class_<quat<float>,std::shared_ptr<quat<float>>>::is_holder,std::unique_ptr<quat<float>,std::default_delete<_Ty>>,std::shared_ptr<_Ty>>' being compiled
+          with
+          [
+              _Ty=quat<float>
+          ]
+  f:\hoomd_win\hoomd_win\hoomdmath.cc(150): note: see reference to class template instantiation 'pybind11::class_<quat<float>,std::shared_ptr<quat<float>>>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1560): note: see reference to class template instantiation 'pybind11::detail::descr<8>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1558): note: see reference to class template instantiation 'pybind11::detail::descr<5>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1113): note: see reference to class template instantiation 'pybind11::detail::descr<7>' being compiled
   MemoryTraceback.cc
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C2039: 'sincosf': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C3861: 'sincosf': identifier not found
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2039: 'sincos': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2665: 'fast::sincos': none of the 2 overloads could convert all the argument types
-  f:\hoomd_win\hoomd_win\hoomdmath.h(454): note: could be 'void fast::sincos(double,double &,double &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(444): note: or       'void fast::sincos(float,float &,float &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(461): note: while trying to match the argument list '(double, double *, double *)'
-f:\hoomd_win\hoomd_win\hoomdmath.h(473): error C2065: 'M_PI': undeclared identifier
-f:\hoomd_win\hoomd_win\hoomdmath.h(485): error C2065: 'M_PI': undeclared identifier
 f:\hoomd_win\hoomd_win\messenger.h(267): warning C4251: 'Messenger::m_mpi_config': class 'std::shared_ptr<MPIConfiguration>' needs to have dll-interface to be used by clients of class 'Messenger'
   f:\hoomd_win\hoomd_win\messenger.h(106): note: see declaration of 'std::shared_ptr<MPIConfiguration>'
 f:\hoomd_win\hoomd_win\messenger.h(273): warning C4251: 'Messenger::m_streambuf_out': class 'std::shared_ptr<std::streambuf>' needs to have dll-interface to be used by clients of class 'Messenger'
@@ -237,15 +262,6 @@ f:\hoomd_win\hoomd_win\memorytraceback.h(46): warning C4251: 'MemoryTraceback::m
           ]
 f:\hoomd_win\hoomd_win\memorytraceback.cc(15): fatal error C1083: Cannot open include file: 'execinfo.h': No such file or directory
   Messenger.cc
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C2039: 'sincosf': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C3861: 'sincosf': identifier not found
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2039: 'sincos': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2665: 'fast::sincos': none of the 2 overloads could convert all the argument types
-  f:\hoomd_win\hoomd_win\hoomdmath.h(454): note: could be 'void fast::sincos(double,double &,double &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(444): note: or       'void fast::sincos(float,float &,float &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(461): note: while trying to match the argument list '(double, double *, double *)'
-f:\hoomd_win\hoomd_win\hoomdmath.h(473): error C2065: 'M_PI': undeclared identifier
-f:\hoomd_win\hoomd_win\hoomdmath.h(485): error C2065: 'M_PI': undeclared identifier
 f:\hoomd_win\hoomd_win\messenger.h(267): warning C4251: 'Messenger::m_mpi_config': class 'std::shared_ptr<MPIConfiguration>' needs to have dll-interface to be used by clients of class 'Messenger'
   f:\hoomd_win\hoomd_win\messenger.h(106): note: see declaration of 'std::shared_ptr<MPIConfiguration>'
 f:\hoomd_win\hoomd_win\messenger.h(273): warning C4251: 'Messenger::m_streambuf_out': class 'std::shared_ptr<std::streambuf>' needs to have dll-interface to be used by clients of class 'Messenger'
@@ -387,13 +403,3 @@ f:\hoomd_win\hoomd_win\executionconfiguration.h(162): warning C4267: 'initializi
 f:\hoomd_win\hoomd_win\executionconfiguration.h(172): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\messenger.cc(13): fatal error C1083: Cannot open include file: 'ClockSource.h': No such file or directory
   MPIConfiguration.cc
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C2039: 'sincosf': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(449): error C3861: 'sincosf': identifier not found
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2039: 'sincos': is not a member of '`global namespace''
-f:\hoomd_win\hoomd_win\hoomdmath.h(461): error C2665: 'fast::sincos': none of the 2 overloads could convert all the argument types
-  f:\hoomd_win\hoomd_win\hoomdmath.h(454): note: could be 'void fast::sincos(double,double &,double &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(444): note: or       'void fast::sincos(float,float &,float &)'
-  f:\hoomd_win\hoomd_win\hoomdmath.h(461): note: while trying to match the argument list '(double, double *, double *)'
-f:\hoomd_win\hoomd_win\hoomdmath.h(473): error C2065: 'M_PI': undeclared identifier
-f:\hoomd_win\hoomd_win\hoomdmath.h(485): error C2065: 'M_PI': undeclared identifier
-  tools.cpp
