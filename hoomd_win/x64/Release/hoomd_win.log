@@ -27,6 +27,12 @@ f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(357): warning : field of class t
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(358): warning : field of class type without a DLL interface used in a class with a DLL interface
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(369): warning : field of class type without a DLL interface used in a class with a DLL interface
 f:\hoomd_win\hoomd_win\GPUArray.h(299): warning : type qualifier on return type is meaningless
+f:\hoomd_win\hoomd_win\GPUArray.h(1134): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1208): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1217): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1134): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1208): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1217): warning : statement is unreachable
 f:\hoomd_win\hoomd_win\Messenger.h(267): warning : field of class type without a DLL interface used in a class with a DLL interface
 f:\hoomd_win\hoomd_win\Messenger.h(273): warning : field of class type without a DLL interface used in a class with a DLL interface
 f:\hoomd_win\hoomd_win\Messenger.h(274): warning : field of class type without a DLL interface used in a class with a DLL interface
@@ -172,10 +178,41 @@ f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(369): warning C4251: 'ExecutionC
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(147): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(162): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(172): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\GlobalArray.h(119): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  f:\hoomd_win\hoomd_win\GlobalArray.h(115): note: while compiling class template member function 'hoomd::detail::managed_deleter<T>::managed_deleter(std::shared_ptr<const ExecutionConfiguration>,bool,size_t,void *,size_t)'
+          with
+          [
+              T=unsigned int
+          ]
+  f:\hoomd_win\hoomd_win\GlobalArray.h(767): note: see reference to function template instantiation 'hoomd::detail::managed_deleter<T>::managed_deleter(std::shared_ptr<const ExecutionConfiguration>,bool,size_t,void *,size_t)' being compiled
+          with
+          [
+              T=unsigned int
+          ]
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\memory(2132): note: see reference to class template instantiation 'hoomd::detail::managed_deleter<T>' being compiled
+          with
+          [
+              T=unsigned int
+          ]
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\memory(2179): note: see reference to class template instantiation 'std::_Unique_ptr_base<_Ty,_Dx>' being compiled
+          with
+          [
+              _Ty=unsigned int,
+              _Dx=hoomd::detail::managed_deleter<unsigned int>
+          ]
+  f:\hoomd_win\hoomd_win\GlobalArray.h(680): note: see reference to class template instantiation 'std::unique_ptr<T,hoomd::detail::managed_deleter<T>>' being compiled
+          with
+          [
+              T=unsigned int
+          ]
+  F:/hoomd_win/hoomd_win/main.cpp(194): note: see reference to class template instantiation 'GlobalArray<unsigned int>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1561): note: see reference to class template instantiation 'pybind11::detail::descr<8>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1559): note: see reference to class template instantiation 'pybind11::detail::descr<5>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1113): note: see reference to class template instantiation 'pybind11::detail::descr<7>' being compiled
      Creating library F:\hoomd_win\x64\Release\hoomd_win.lib and object F:\hoomd_win\x64\Release\hoomd_win.exp
   Generating code
-  19 of 3664 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+  0 of 3675 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    27 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   hoomd_win.vcxproj -> F:\hoomd_win\x64\Release\hoomd_win.exe
