@@ -82,6 +82,7 @@
   <ItemGroup>
     <CudaCompile Include="..\test\test_gpu_array.cu" />
     <CudaCompile Include="main.cpp" />
+    <CudaCompile Include="ParticleData.cu" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\test\test_gpu_array.cuh" />
@@ -91,12 +92,15 @@
     <ClInclude Include="ExecutionConfiguration.h" />
     <ClInclude Include="GlobalArray.h" />
     <ClInclude Include="GPUArray.h" />
+    <ClInclude Include="GPUPartition.cuh" />
     <ClInclude Include="GPUVector.h" />
     <ClInclude Include="HOOMDMath.h" />
     <ClInclude Include="HOOMDVersion.h" />
     <ClInclude Include="MemoryTraceback.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="MPIConfiguration.h" />
+    <ClInclude Include="ParticleData.cuh" />
+    <ClInclude Include="ParticleData.h" />
     <ClInclude Include="Profiler.h" />
     <ClInclude Include="VectorMath.h" />
   </ItemGroup>
@@ -108,6 +112,7 @@
     <ClCompile Include="MemoryTraceback.cc" />
     <ClCompile Include="Messenger.cc" />
     <ClCompile Include="MPIConfiguration.cc" />
+    <ClCompile Include="ParticleData.cc" />
     <ClCompile Include="Profiler.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

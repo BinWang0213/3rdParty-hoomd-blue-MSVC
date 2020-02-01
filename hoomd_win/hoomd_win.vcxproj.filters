@@ -84,11 +84,23 @@
     <ClInclude Include="Profiler.h">
       <Filter>Header Files\utils</Filter>
     </ClInclude>
+    <ClInclude Include="ParticleData.h">
+      <Filter>Header Files\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="GPUPartition.cuh">
+      <Filter>Header Files\MPI</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleData.cuh">
+      <Filter>Header Files\particles</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
     <CudaCompile Include="..\test\test_gpu_array.cu">
       <Filter>Testing Files</Filter>
+    </CudaCompile>
+    <CudaCompile Include="ParticleData.cu">
+      <Filter>Source Files\particles</Filter>
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
@@ -115,6 +127,9 @@
     </ClCompile>
     <ClCompile Include="Profiler.cc">
       <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleData.cc">
+      <Filter>Source Files\particles</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
