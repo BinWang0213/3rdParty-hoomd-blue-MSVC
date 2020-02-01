@@ -366,10 +366,23 @@ f:\hoomd_win\hoomd_win\MemoryTraceback.h
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\map
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xtree
 f:\hoomd_win\hoomd_win\Messenger.h
-f:\hoomd_win\hoomd_win\GlobalArray.h
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h
-f:\hoomd_win\hoomd_win\GPUArray.h
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\math.h
+f:\hoomd_win\hoomd_win\VectorMath.h
+F:\hoomd_win\3rdParty\Catch2\single_include\catch2/catch.hpp
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\ctime
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\ratio
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\chrono
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\thr/xtimec.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\thr/xthrcommon.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\functional
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\random
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\set
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\windows.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\winapifamily.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\winpackagefamily.h
@@ -471,138 +484,14 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winreg.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\reason.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winnetwk.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\wnnc.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\cderr.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dde.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\ddeml.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dlgs.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\lzexpand.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsystem.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsyscom.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mciapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsyscom.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmiscapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsyscom.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmiscapi2.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsyscom.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\playsoundapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsyscom.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmeapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsyscom.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\timeapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsyscom.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\joystickapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mmsyscom.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\nb30.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\rpc.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\rpcdce.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\rpcdcep.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\rpcnsi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\rpcnterr.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\rpcasync.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\shellapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winperf.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsock.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\inaddr.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\wincrypt.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\bcrypt.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\ncrypt.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\dpapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winefs.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winscard.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\wtypes.h
-c:\program files (x86)\windows kits\10\include\10.0.18362.0\shared\rpcndr.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\rpcnsip.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\rpcsal.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-c:\program files (x86)\windows kits\10\include\10.0.18362.0\shared\wtypesbase.h
-c:\program files (x86)\windows kits\10\include\10.0.18362.0\shared\guiddef.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winioctl.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack1.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\winsmcrd.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winspool.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\prsht.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\ole2.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\objbase.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\combaseapi.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\unknwnbase.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\objidlbase.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\guiddef.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\cguid.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\coml2api.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\objidl.h
-c:\program files (x86)\windows kits\10\include\10.0.18362.0\um\unknwn.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\propidlbase.h
-c:\program files (x86)\windows kits\10\include\10.0.18362.0\um\oaidl.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\urlmon.h
-c:\program files (x86)\windows kits\10\include\10.0.18362.0\um\oleidl.h
-c:\program files (x86)\windows kits\10\include\10.0.18362.0\um\servprov.h
-c:\program files (x86)\windows kits\10\include\10.0.18362.0\um\msxml.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\propidl.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\oleauto.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\pshpack8.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\poppack.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\commdlg.h
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\prsht.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\shared\stralign.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\winsvc.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\mcx.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\imm.h
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\um\ime_cmodes.h
+C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\sstream
-f:\hoomd_win\hoomd_win\GPUVector.h
-f:\hoomd_win\hoomd_win\GPUArray.h
-F:\hoomd_win\test\test_gpu_array.cuh
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\device_launch_parameters.h
-F:\hoomd_win\3rdParty\Catch2\single_include\catch2/catch.hpp
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\ctime
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\ratio
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\chrono
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\thr/xtimec.h
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\thr/xthrcommon.h
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\functional
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\random
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\set
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
-C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cctype
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h

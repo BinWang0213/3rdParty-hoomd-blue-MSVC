@@ -28,6 +28,9 @@
     <Filter Include="Testing Files">
       <UniqueIdentifier>{979804e2-9a46-4517-8bed-541f6831c7e3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\particles">
+      <UniqueIdentifier>{a3541167-5d26-4218-b531-1474bd6f7eba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUArray.h">
@@ -68,6 +71,9 @@
     </ClInclude>
     <ClInclude Include="GlobalArray.h">
       <Filter>Header Files\common</Filter>
+    </ClInclude>
+    <ClInclude Include="BoxDim.h">
+      <Filter>Header Files\particles</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -85,6 +85,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\test\test_gpu_array.cuh" />
+    <ClInclude Include="BoxDim.h" />
     <ClInclude Include="CachedAllocator.h" />
     <ClInclude Include="ClockSource.h" />
     <ClInclude Include="ExecutionConfiguration.h" />
