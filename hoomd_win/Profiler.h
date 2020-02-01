@@ -155,7 +155,7 @@ void export_Profiler(pybind11::module& m);
 
 
 //! Output operator for Profiler
-PYBIND11_EXPORT std::ostream& operator<<(std::ostream &o, Profiler& prof);
+//PYBIND11_EXPORT std::ostream& operator<<(std::ostream &o, Profiler& prof);
 
 /////////////////////////////////////
 // Profiler inlines
