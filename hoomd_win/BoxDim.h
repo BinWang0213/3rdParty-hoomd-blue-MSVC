@@ -26,7 +26,7 @@
 #else
 
 #ifdef _WIN32
-#define HOSTDEVICE inline
+#define HOSTDEVICE inline __forceinline
 #else
 #define HOSTDEVICE inline __attribute__((always_inline))
 #endif
