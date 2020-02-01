@@ -81,6 +81,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <CudaCompile Include="..\test\test_gpu_array.cu" />
+    <CudaCompile Include="hoomd\extern\mgpucontext.cu" />
     <CudaCompile Include="main.cpp" />
     <CudaCompile Include="ParticleData.cu" />
   </ItemGroup>
@@ -96,6 +97,7 @@
     <ClInclude Include="GPUVector.h" />
     <ClInclude Include="HOOMDMath.h" />
     <ClInclude Include="HOOMDVersion.h" />
+    <ClInclude Include="hoomd\extern\util\mgpucontext.h" />
     <ClInclude Include="MemoryTraceback.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="MPIConfiguration.h" />
@@ -109,6 +111,7 @@
     <ClCompile Include="ExecutionConfiguration.cc" />
     <ClCompile Include="HOOMDMath.cc" />
     <ClCompile Include="HOOMDVersion.cc" />
+    <ClCompile Include="hoomd\extern\mgpuutil.cc" />
     <ClCompile Include="MemoryTraceback.cc" />
     <ClCompile Include="Messenger.cc" />
     <ClCompile Include="MPIConfiguration.cc" />

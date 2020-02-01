@@ -37,6 +37,12 @@
     <Filter Include="Source Files\particles">
       <UniqueIdentifier>{30a36e37-7dd2-4161-a885-c5196fd8e76e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\utils\moderngpu">
+      <UniqueIdentifier>{84cb2a7b-9aea-422a-b218-8010f053d61f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils\moderngpu">
+      <UniqueIdentifier>{c17e52a4-99a5-4de1-b937-eeb6886cc719}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUArray.h">
@@ -93,6 +99,9 @@
     <ClInclude Include="ParticleData.cuh">
       <Filter>Header Files\particles</Filter>
     </ClInclude>
+    <ClInclude Include="hoomd\extern\util\mgpucontext.h">
+      <Filter>Header Files\utils\moderngpu</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
@@ -101,6 +110,9 @@
     </CudaCompile>
     <CudaCompile Include="ParticleData.cu">
       <Filter>Source Files\particles</Filter>
+    </CudaCompile>
+    <CudaCompile Include="hoomd\extern\mgpucontext.cu">
+      <Filter>Source Files\utils\moderngpu</Filter>
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
@@ -130,6 +142,9 @@
     </ClCompile>
     <ClCompile Include="ParticleData.cc">
       <Filter>Source Files\particles</Filter>
+    </ClCompile>
+    <ClCompile Include="hoomd\extern\mgpuutil.cc">
+      <Filter>Source Files\utils\moderngpu</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
