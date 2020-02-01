@@ -31,6 +31,12 @@
     <Filter Include="Header Files\particles">
       <UniqueIdentifier>{a3541167-5d26-4218-b531-1474bd6f7eba}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\MPI">
+      <UniqueIdentifier>{a3a24234-7750-422a-9a86-4c4e33087613}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\particles">
+      <UniqueIdentifier>{30a36e37-7dd2-4161-a885-c5196fd8e76e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUArray.h">
@@ -75,6 +81,9 @@
     <ClInclude Include="BoxDim.h">
       <Filter>Header Files\particles</Filter>
     </ClInclude>
+    <ClInclude Include="Profiler.h">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
@@ -102,6 +111,9 @@
       <Filter>Source Files\utils</Filter>
     </ClCompile>
     <ClCompile Include="ClockSource.cc">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Profiler.cc">
       <Filter>Source Files\utils</Filter>
     </ClCompile>
   </ItemGroup>

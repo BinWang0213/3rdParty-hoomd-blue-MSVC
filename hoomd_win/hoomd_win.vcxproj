@@ -97,6 +97,7 @@
     <ClInclude Include="MemoryTraceback.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="MPIConfiguration.h" />
+    <ClInclude Include="Profiler.h" />
     <ClInclude Include="VectorMath.h" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +108,7 @@
     <ClCompile Include="MemoryTraceback.cc" />
     <ClCompile Include="Messenger.cc" />
     <ClCompile Include="MPIConfiguration.cc" />
+    <ClCompile Include="Profiler.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
