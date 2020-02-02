@@ -7,10 +7,12 @@
 /*! \file SystemDefinition.h
     \brief Defines the SystemDefinition class
  */
-
 #ifdef NVCC
 #error This header cannot be compiled by nvcc
 #endif
+
+#ifndef __SYSTEM_DEFINITION_H__
+#define __SYSTEM_DEFINITION_H__
 
 #include "ParticleData.h"
 #include "IntegratorData.h"
@@ -19,9 +21,6 @@
 #include <memory>
 #include <hoomd/extern/pybind/include/pybind11/pybind11.h>
 
-
-#ifndef __SYSTEM_DEFINITION_H__
-#define __SYSTEM_DEFINITION_H__
 
 #ifdef ENABLE_MPI
 //! Forward declaration of Communicator
