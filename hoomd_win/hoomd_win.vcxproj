@@ -112,8 +112,10 @@
     <ClInclude Include="ParticleGroup.cuh" />
     <ClInclude Include="ParticleGroup.h" />
     <ClInclude Include="Profiler.h" />
+    <ClInclude Include="SharedSignal.h" />
     <ClInclude Include="SnapshotSystemData.h" />
     <ClInclude Include="SystemDefinition.h" />
+    <ClInclude Include="Updater.h" />
     <ClInclude Include="VectorMath.h" />
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +135,7 @@
     <ClCompile Include="Profiler.cc" />
     <ClCompile Include="SnapshotSystemData.cc" />
     <ClCompile Include="SystemDefinition.cc" />
+    <ClCompile Include="Updater.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

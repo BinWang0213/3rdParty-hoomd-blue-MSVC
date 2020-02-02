@@ -46,6 +46,12 @@
     <Filter Include="Source Files\MPI">
       <UniqueIdentifier>{56dd6acc-32bd-41e3-a652-6f59e7825728}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\integration">
+      <UniqueIdentifier>{938d507a-fc3c-416e-9116-1552a34dda63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\integration">
+      <UniqueIdentifier>{ae459822-45ad-4953-b9be-e63a15c0b56e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUArray.h">
@@ -62,9 +68,6 @@
     </ClInclude>
     <ClInclude Include="CachedAllocator.h">
       <Filter>Header Files\memory</Filter>
-    </ClInclude>
-    <ClInclude Include="MPIConfiguration.h">
-      <Filter>Header Files\utils</Filter>
     </ClInclude>
     <ClInclude Include="MemoryTraceback.h">
       <Filter>Header Files\memory</Filter>
@@ -108,9 +111,6 @@
     <ClInclude Include="SnapshotSystemData.h">
       <Filter>Header Files\particles</Filter>
     </ClInclude>
-    <ClInclude Include="IntegratorData.h">
-      <Filter>Header Files\particles</Filter>
-    </ClInclude>
     <ClInclude Include="Index1D.h">
       <Filter>Header Files\common</Filter>
     </ClInclude>
@@ -128,6 +128,18 @@
     </ClInclude>
     <ClInclude Include="ParticleGroup.cuh">
       <Filter>Header Files\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegratorData.h">
+      <Filter>Header Files\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="MPIConfiguration.h">
+      <Filter>Header Files\MPI</Filter>
+    </ClInclude>
+    <ClInclude Include="SharedSignal.h">
+      <Filter>Header Files\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="Updater.h">
+      <Filter>Header Files\integration</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -151,9 +163,6 @@
     </ClCompile>
     <ClCompile Include="HOOMDMath.cc">
       <Filter>Source Files\common</Filter>
-    </ClCompile>
-    <ClCompile Include="MPIConfiguration.cc">
-      <Filter>Source Files\utils</Filter>
     </ClCompile>
     <ClCompile Include="MemoryTraceback.cc">
       <Filter>Source Files\memory</Filter>
@@ -179,9 +188,6 @@
     <ClCompile Include="SnapshotSystemData.cc">
       <Filter>Source Files\particles</Filter>
     </ClCompile>
-    <ClCompile Include="IntegratorData.cc">
-      <Filter>Source Files\particles</Filter>
-    </ClCompile>
     <ClCompile Include="hoomd\extern\mgpuutil.cpp">
       <Filter>Source Files\utils\moderngpu</Filter>
     </ClCompile>
@@ -193,6 +199,15 @@
     </ClCompile>
     <ClCompile Include="ParticleGroup.cc">
       <Filter>Source Files\particles</Filter>
+    </ClCompile>
+    <ClCompile Include="IntegratorData.cc">
+      <Filter>Source Files\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="MPIConfiguration.cc">
+      <Filter>Source Files\MPI</Filter>
+    </ClCompile>
+    <ClCompile Include="Updater.cc">
+      <Filter>Source Files\integration</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
