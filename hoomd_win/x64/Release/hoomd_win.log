@@ -1,91 +1,642 @@
-﻿  Compiling CUDA source file ParticleGroup.cu...
+﻿  Compiling CUDA source file main.cpp...
   
-  F:\hoomd_win\hoomd_win>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -IF:\hoomd_win\hoomd_win -IC:\Users\PoreSimPC_New\Anaconda3\include -IF:\hoomd_win\test -IF:\hoomd_win\3rdParty\Catch2\single_include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -DENABLE_CUDA -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc141.pdb /FS /Zi  /MD " -o x64\Release\ParticleGroup.cu.obj "F:\hoomd_win\hoomd_win\ParticleGroup.cu" 
-  ParticleGroup.cu
+  F:\hoomd_win\hoomd_win>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin\nvcc.exe" -gencode=arch=compute_75,code=\"sm_75,compute_75\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\bin\HostX86\x64" -x cu  -IF:\hoomd_win\hoomd_win -IC:\Users\PoreSimPC_New\Anaconda3\include -IF:\hoomd_win\test -IF:\hoomd_win\3rdParty\Catch2\single_include -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include"     --keep-dir x64\Release -maxrregcount=0  --machine 64 --compile -cudart static     -DWIN32 -DWIN64 -DNDEBUG -D_CONSOLE -DENABLE_CUDA -D_MBCS -Xcompiler "/EHsc /W3 /nologo /O2 /Fdx64\Release\vc141.pdb /FS /Zi  /MD " -o x64\Release\main.cpp.obj "F:\hoomd_win\hoomd_win\main.cpp" 
+f:\hoomd_win\hoomd_win\Messenger.h(267): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(273): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(274): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(275): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(276): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(277): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(279): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(280): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(281): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(286): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(287): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(288): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(44): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(45): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(46): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(118): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(119): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(209): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(210): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(347): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(349): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(350): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(357): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(358): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(369): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\GPUArray.h(299): warning : type qualifier on return type is meaningless
+f:\hoomd_win\hoomd_win\ParticleData.h(227): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(231): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(232): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(238): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1108): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1109): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1110): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1115): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1117): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1118): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1119): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1120): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1121): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1122): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1123): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1136): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1137): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1138): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1139): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1140): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1141): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1142): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1143): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1144): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1145): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1146): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1147): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1148): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1150): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1151): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1152): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1164): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1165): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1166): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1167): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1168): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1169): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1170): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1171): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1172): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1173): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1174): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1175): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1176): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1177): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1179): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1181): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1182): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1183): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1188): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1196): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1198): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Initializers.h(42): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Initializers.h(43): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Initializers.h(69): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Initializers.h(70): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\IntegratorData.h(34): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\IntegratorData.h(35): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\IntegratorData.h(122): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\SystemDefinition.h(163): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\SystemDefinition.h(171): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(63): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(64): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(65): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(361): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(362): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(363): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(367): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(368): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(369): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(375): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(376): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(382): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\GPUArray.h(1134): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1208): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1217): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1134): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1208): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1217): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1134): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1208): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1217): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1134): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1208): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1217): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\Messenger.h(267): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(273): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(274): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(275): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(276): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(277): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(279): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(280): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(281): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(286): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(287): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Messenger.h(288): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(44): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(45): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(46): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(118): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(119): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(209): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(210): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(347): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(349): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(350): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(357): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(358): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(369): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\GPUArray.h(299): warning : type qualifier on return type is meaningless
+f:\hoomd_win\hoomd_win\GPUArray.h(1134): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1208): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\GPUArray.h(1217): warning : statement is unreachable
+f:\hoomd_win\hoomd_win\ParticleData.h(227): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(231): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(232): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(238): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1108): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1109): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1110): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1115): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1117): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1118): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1119): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1120): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1121): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1122): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1123): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1136): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1137): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1138): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1139): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1140): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1141): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1142): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1143): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1144): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1145): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1146): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1147): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1148): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1150): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1151): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1152): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1164): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1165): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1166): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1167): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1168): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1169): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1170): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1171): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1172): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1173): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1174): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1175): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1176): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1177): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1179): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1181): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1182): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1183): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1188): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1196): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleData.h(1198): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Initializers.h(42): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Initializers.h(43): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Initializers.h(69): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\Initializers.h(70): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\IntegratorData.h(34): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\IntegratorData.h(35): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\IntegratorData.h(122): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\SystemDefinition.h(163): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\SystemDefinition.h(171): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(63): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(64): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(65): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(361): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(362): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(363): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(367): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(368): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(369): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(375): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(376): warning : field of class type without a DLL interface used in a class with a DLL interface
+f:\hoomd_win\hoomd_win\ParticleGroup.h(382): warning : field of class type without a DLL interface used in a class with a DLL interface
+  main.cpp
+f:\hoomd_win\hoomd_win\Messenger.h(267): warning C4251: 'Messenger::m_mpi_config': class 'std::shared_ptr<MPIConfiguration>' needs to have dll-interface to be used by clients of class 'Messenger'
+  f:\hoomd_win\hoomd_win\Messenger.h(106): note: see declaration of 'std::shared_ptr<MPIConfiguration>'
+f:\hoomd_win\hoomd_win\Messenger.h(273): warning C4251: 'Messenger::m_streambuf_out': class 'std::shared_ptr<std::basic_streambuf<char,std::char_traits<char>>>' needs to have dll-interface to be used by clients of class 'Messenger'
+  f:\hoomd_win\hoomd_win\Messenger.h(273): note: see declaration of 'std::shared_ptr<std::basic_streambuf<char,std::char_traits<char>>>'
+f:\hoomd_win\hoomd_win\Messenger.h(274): warning C4251: 'Messenger::m_streambuf_err': class 'std::shared_ptr<std::basic_streambuf<char,std::char_traits<char>>>' needs to have dll-interface to be used by clients of class 'Messenger'
+  f:\hoomd_win\hoomd_win\Messenger.h(273): note: see declaration of 'std::shared_ptr<std::basic_streambuf<char,std::char_traits<char>>>'
+f:\hoomd_win\hoomd_win\Messenger.h(275): warning C4251: 'Messenger::m_nullstream': class 'std::shared_ptr<nullstream>' needs to have dll-interface to be used by clients of class 'Messenger'
+  f:\hoomd_win\hoomd_win\Messenger.h(275): note: see declaration of 'std::shared_ptr<nullstream>'
+f:\hoomd_win\hoomd_win\Messenger.h(276): warning C4251: 'Messenger::m_file_out': class 'std::shared_ptr<std::basic_ostream<char,std::char_traits<char>>>' needs to have dll-interface to be used by clients of class 'Messenger'
+  f:\hoomd_win\hoomd_win\Messenger.h(276): note: see declaration of 'std::shared_ptr<std::basic_ostream<char,std::char_traits<char>>>'
+f:\hoomd_win\hoomd_win\Messenger.h(277): warning C4251: 'Messenger::m_file_err': class 'std::shared_ptr<std::basic_ostream<char,std::char_traits<char>>>' needs to have dll-interface to be used by clients of class 'Messenger'
+  f:\hoomd_win\hoomd_win\Messenger.h(276): note: see declaration of 'std::shared_ptr<std::basic_ostream<char,std::char_traits<char>>>'
+f:\hoomd_win\hoomd_win\Messenger.h(279): warning C4251: 'Messenger::m_err_prefix': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Messenger'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\hoomd_win\hoomd_win\Messenger.h(280): warning C4251: 'Messenger::m_warning_prefix': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Messenger'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\hoomd_win\hoomd_win\Messenger.h(281): warning C4251: 'Messenger::m_notice_prefix': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'Messenger'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\hoomd_win\hoomd_win\Messenger.h(286): warning C4251: 'Messenger::m_sys': class 'pybind11::module' needs to have dll-interface to be used by clients of class 'Messenger'
+  F:\hoomd_win\hoomd_win\hoomd/extern/pybind/include/pybind11/pybind11.h(789): note: see declaration of 'pybind11::module'
+f:\hoomd_win\hoomd_win\Messenger.h(287): warning C4251: 'Messenger::m_pystdout': class 'pybind11::object' needs to have dll-interface to be used by clients of class 'Messenger'
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\pytypes.h(230): note: see declaration of 'pybind11::object'
+f:\hoomd_win\hoomd_win\Messenger.h(288): warning C4251: 'Messenger::m_pystderr': class 'pybind11::object' needs to have dll-interface to be used by clients of class 'Messenger'
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\pytypes.h(230): note: see declaration of 'pybind11::object'
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(44): warning C4251: 'MemoryTraceback::m_traces': class 'std::map<std::pair<const void *,unsigned int>,std::vector<void *,std::allocator<_Ty>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,std::vector<_Ty,std::allocator<_Ty>>>>>' needs to have dll-interface to be used by clients of class 'MemoryTraceback'
+          with
+          [
+              _Ty=void *,
+              _Kty=std::pair<const void *,unsigned int>
+          ]
+  f:\hoomd_win\hoomd_win\MemoryTraceback.h(44): note: see declaration of 'std::map<std::pair<const void *,unsigned int>,std::vector<void *,std::allocator<_Ty>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,std::vector<_Ty,std::allocator<_Ty>>>>>'
+          with
+          [
+              _Ty=void *,
+              _Kty=std::pair<const void *,unsigned int>
+          ]
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(45): warning C4251: 'MemoryTraceback::m_type_hints': class 'std::map<std::pair<const void *,unsigned int>,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'MemoryTraceback'
+          with
+          [
+              _Kty=std::pair<const void *,unsigned int>,
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  f:\hoomd_win\hoomd_win\MemoryTraceback.h(45): note: see declaration of 'std::map<std::pair<const void *,unsigned int>,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=std::pair<const void *,unsigned int>,
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+f:\hoomd_win\hoomd_win\MemoryTraceback.h(46): warning C4251: 'MemoryTraceback::m_tags': class 'std::map<std::pair<const void *,unsigned int>,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' needs to have dll-interface to be used by clients of class 'MemoryTraceback'
+          with
+          [
+              _Kty=std::pair<const void *,unsigned int>,
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  f:\hoomd_win\hoomd_win\MemoryTraceback.h(45): note: see declaration of 'std::map<std::pair<const void *,unsigned int>,std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::less<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'
+          with
+          [
+              _Kty=std::pair<const void *,unsigned int>,
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(118): warning C4251: 'ExecutionConfiguration::m_mpi_config': class 'std::shared_ptr<MPIConfiguration>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+  f:\hoomd_win\hoomd_win\Messenger.h(106): note: see declaration of 'std::shared_ptr<MPIConfiguration>'
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(119): warning C4251: 'ExecutionConfiguration::msg': class 'std::shared_ptr<Messenger>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+  f:\hoomd_win\hoomd_win\MemoryTraceback.h(36): note: see declaration of 'std::shared_ptr<Messenger>'
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(209): warning C4251: 'ExecutionConfiguration::m_gpu_id': class 'std::vector<std::_Vbase,std::allocator<std::_Vbase>>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\vector(2468): note: see declaration of 'std::vector<std::_Vbase,std::allocator<std::_Vbase>>'
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(210): warning C4251: 'ExecutionConfiguration::m_dev_prop': class 'std::vector<cudaDeviceProp,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+          with
+          [
+              _Ty=cudaDeviceProp
+          ]
+  f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(210): note: see declaration of 'std::vector<cudaDeviceProp,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=cudaDeviceProp
+          ]
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(347): warning C4251: 'ExecutionConfiguration::m_gpu_available': class 'std::vector<bool,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+          with
+          [
+              _Ty=bool
+          ]
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1872): note: see declaration of 'std::vector<bool,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=bool
+          ]
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(349): warning C4251: 'ExecutionConfiguration::m_gpu_list': class 'std::vector<int,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+          with
+          [
+              _Ty=int
+          ]
+  f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(81): note: see declaration of 'std::vector<int,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=int
+          ]
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(350): warning C4251: 'ExecutionConfiguration::m_events': class 'std::vector<CUevent_st *,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+          with
+          [
+              _Ty=CUevent_st *
+          ]
+  f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(350): note: see declaration of 'std::vector<CUevent_st *,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=CUevent_st *
+          ]
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(357): warning C4251: 'ExecutionConfiguration::m_cached_alloc': class 'std::unique_ptr<CachedAllocator,std::default_delete<CachedAllocator>>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+  f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(357): note: see declaration of 'std::unique_ptr<CachedAllocator,std::default_delete<CachedAllocator>>'
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(358): warning C4251: 'ExecutionConfiguration::m_cached_alloc_managed': class 'std::unique_ptr<CachedAllocator,std::default_delete<CachedAllocator>>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+  f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(357): note: see declaration of 'std::unique_ptr<CachedAllocator,std::default_delete<CachedAllocator>>'
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(369): warning C4251: 'ExecutionConfiguration::m_memory_traceback': class 'std::unique_ptr<MemoryTraceback,std::default_delete<MemoryTraceback>>' needs to have dll-interface to be used by clients of struct 'ExecutionConfiguration'
+  f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(369): note: see declaration of 'std::unique_ptr<MemoryTraceback,std::default_delete<MemoryTraceback>>'
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(147): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(162): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(172): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\BoxDim.h(333): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\BoxDim.h(339): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\BoxDim.h(349): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\BoxDim.h(354): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\GPUPartition.cuh(34): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
 f:\hoomd_win\hoomd_win\GPUPartition.cuh(49): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
-f:\hoomd_win\hoomd_win\CachedAllocator.h(88): warning C4244: 'argument': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data
-F:/hoomd_win/hoomd_win/ParticleGroup.cu(99): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-f:\hoomd_win\hoomd_win\CachedAllocator.h(178): warning C4244: 'initializing': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data
-  f:\hoomd_win\hoomd_win\CachedAllocator.h(88): note: see reference to function template instantiation 'T *CachedAllocator::getTemporaryBuffer<char>(unsigned int)' being compiled
+f:\hoomd_win\hoomd_win\ParticleData.h(224): warning C4251: 'SnapshotParticleData<Real>::pos': class 'std::vector<vec3<Real>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
           with
           [
-              T=char
+              _Ty=vec3<Real>
           ]
+  f:\hoomd_win\hoomd_win\ParticleData.h(224): note: see declaration of 'std::vector<vec3<Real>,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=vec3<Real>
+          ]
+  f:\hoomd_win\hoomd_win\ParticleData.h(241): note: see reference to class template instantiation 'SnapshotParticleData<Real>' being compiled
   f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1561): note: see reference to class template instantiation 'pybind11::detail::descr<8>' being compiled
   f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1559): note: see reference to class template instantiation 'pybind11::detail::descr<5>' being compiled
   f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1113): note: see reference to class template instantiation 'pybind11::detail::descr<7>' being compiled
-f:\hoomd_win\hoomd_win\CachedAllocator.h(193): warning C4244: '=': conversion from '_Ty1' to 'unsigned int', possible loss of data
+f:\hoomd_win\hoomd_win\ParticleData.h(225): warning C4251: 'SnapshotParticleData<Real>::vel': class 'std::vector<vec3<Real>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
           with
           [
-              _Ty1=__int64
+              _Ty=vec3<Real>
           ]
-f:\hoomd_win\hoomd_win\CachedAllocator.h(211): warning C4244: '+=': conversion from 'ptrdiff_t' to 'unsigned int', possible loss of data
-f:\hoomd_win\hoomd_win\CachedAllocator.h(225): warning C4244: '-=': conversion from '_Ty1' to 'unsigned int', possible loss of data
+  f:\hoomd_win\hoomd_win\ParticleData.h(224): note: see declaration of 'std::vector<vec3<Real>,std::allocator<_Ty>>'
           with
           [
-              _Ty1=__int64
+              _Ty=vec3<Real>
           ]
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\thrust/system/cuda/detail/reduce.h(939): warning C4244: 'argument': conversion from 'Size' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\ParticleData.h(226): warning C4251: 'SnapshotParticleData<Real>::accel': class 'std::vector<vec3<Real>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
           with
           [
-              Size=size_type
+              _Ty=vec3<Real>
           ]
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\thrust/system/cuda/detail/reduce.h(1017): note: see reference to function template instantiation 'T thrust::cuda_cub::detail::reduce_n_impl<Derived,InputIt,Size,T,BinaryOp>(thrust::cuda_cub::execution_policy<Derived> &,InputIt,Size,T,BinaryOp)' being compiled
+  f:\hoomd_win\hoomd_win\ParticleData.h(224): note: see declaration of 'std::vector<vec3<Real>,std::allocator<_Ty>>'
           with
           [
-              T=value_type,
-              Derived=thrust::detail::execute_with_allocator<CachedAllocator &,thrust::cuda_cub::execute_on_stream_base>,
-              InputIt=thrust::device_ptr<unsigned int>,
-              Size=size_type,
-              BinaryOp=thrust::plus<unsigned int>
+              _Ty=vec3<Real>
           ]
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\thrust/system/cuda/detail/reduce.h(1037): note: see reference to function template instantiation 'T thrust::cuda_cub::reduce_n<Derived,InputIt,size_type,T,BinaryOp>(thrust::cuda_cub::execution_policy<Derived> &,InputIt,Size,T,BinaryOp)' being compiled
+f:\hoomd_win\hoomd_win\ParticleData.h(227): warning C4251: 'SnapshotParticleData<Real>::type': class 'std::vector<std::_Vbase,std::allocator<std::_Vbase>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\vector(2468): note: see declaration of 'std::vector<std::_Vbase,std::allocator<std::_Vbase>>'
+f:\hoomd_win\hoomd_win\ParticleData.h(228): warning C4251: 'SnapshotParticleData<Real>::mass': class 'std::vector<T,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\detail/common.h(772): note: see declaration of 'std::vector<T,std::allocator<_Ty>>'
+f:\hoomd_win\hoomd_win\ParticleData.h(229): warning C4251: 'SnapshotParticleData<Real>::charge': class 'std::vector<T,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\detail/common.h(772): note: see declaration of 'std::vector<T,std::allocator<_Ty>>'
+f:\hoomd_win\hoomd_win\ParticleData.h(230): warning C4251: 'SnapshotParticleData<Real>::diameter': class 'std::vector<T,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\detail/common.h(772): note: see declaration of 'std::vector<T,std::allocator<_Ty>>'
+f:\hoomd_win\hoomd_win\ParticleData.h(231): warning C4251: 'SnapshotParticleData<Real>::image': class 'std::vector<int3,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
           with
           [
-              T=value_type,
-              Derived=thrust::detail::execute_with_allocator<CachedAllocator &,thrust::cuda_cub::execute_on_stream_base>,
-              InputIt=thrust::device_ptr<unsigned int>,
-              BinaryOp=thrust::plus<unsigned int>,
-              Size=size_type
+              _Ty=int3
           ]
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\thrust/system/cuda/detail/reduce.h(1049): note: see reference to function template instantiation 'T thrust::cuda_cub::reduce<Derived,InputIt,T,thrust::plus<T>>(thrust::cuda_cub::execution_policy<Derived> &,InputIt,InputIt,T,BinaryOp)' being compiled
+  f:\hoomd_win\hoomd_win\ParticleData.h(231): note: see declaration of 'std::vector<int3,std::allocator<_Ty>>'
           with
           [
-              T=value_type,
-              Derived=thrust::detail::execute_with_allocator<CachedAllocator &,thrust::cuda_cub::execute_on_stream_base>,
-              InputIt=thrust::device_ptr<unsigned int>,
-              BinaryOp=thrust::plus<unsigned int>
+              _Ty=int3
           ]
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\thrust/system/cuda/detail/reduce.h(1061): note: see reference to function template instantiation 'T thrust::cuda_cub::reduce<Derived,InputIt,value_type>(thrust::cuda_cub::execution_policy<Derived> &,InputIt,InputIt,T)' being compiled
+f:\hoomd_win\hoomd_win\ParticleData.h(232): warning C4251: 'SnapshotParticleData<Real>::body': class 'std::vector<std::_Vbase,std::allocator<std::_Vbase>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\vector(2468): note: see declaration of 'std::vector<std::_Vbase,std::allocator<std::_Vbase>>'
+f:\hoomd_win\hoomd_win\ParticleData.h(233): warning C4251: 'SnapshotParticleData<Real>::orientation': class 'std::vector<quat<Real>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
           with
           [
-              T=value_type,
-              Derived=thrust::detail::execute_with_allocator<CachedAllocator &,thrust::cuda_cub::execute_on_stream_base>,
-              InputIt=thrust::device_ptr<unsigned int>
+              _Ty=quat<Real>
           ]
-  C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\thrust/detail/reduce.inl(41): note: see reference to function template instantiation 'unsigned int thrust::cuda_cub::reduce<Derived,InputIterator>(thrust::cuda_cub::execution_policy<Derived> &,InputIt,InputIt)' being compiled
+  f:\hoomd_win\hoomd_win\ParticleData.h(233): note: see declaration of 'std::vector<quat<Real>,std::allocator<_Ty>>'
           with
           [
-              Derived=thrust::detail::execute_with_allocator<CachedAllocator &,thrust::cuda_cub::execute_on_stream_base>,
-              InputIterator=thrust::device_ptr<unsigned int>,
-              InputIt=thrust::device_ptr<unsigned int>
+              _Ty=quat<Real>
           ]
-  F:/hoomd_win/hoomd_win/ParticleGroup.cu(104): note: see reference to function template instantiation 'unsigned int thrust::reduce<DerivedPolicy,thrust::device_ptr<unsigned int>>(const thrust::detail::execution_policy_base<DerivedPolicy> &,InputIterator,InputIterator)' being compiled
+f:\hoomd_win\hoomd_win\ParticleData.h(234): warning C4251: 'SnapshotParticleData<Real>::angmom': class 'std::vector<quat<Real>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
           with
           [
-              DerivedPolicy=thrust::detail::execute_with_allocator<CachedAllocator &,thrust::cuda_cub::execute_on_stream_base>,
-              InputIterator=thrust::device_ptr<unsigned int>
+              _Ty=quat<Real>
           ]
-C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\thrust/system/cuda/detail/reduce.h(968): warning C4244: 'argument': conversion from 'Size' to 'int', possible loss of data
+  f:\hoomd_win\hoomd_win\ParticleData.h(233): note: see declaration of 'std::vector<quat<Real>,std::allocator<_Ty>>'
           with
           [
-              Size=size_type
+              _Ty=quat<Real>
           ]
+f:\hoomd_win\hoomd_win\ParticleData.h(235): warning C4251: 'SnapshotParticleData<Real>::inertia': class 'std::vector<vec3<Real>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
+          with
+          [
+              _Ty=vec3<Real>
+          ]
+  f:\hoomd_win\hoomd_win\ParticleData.h(224): note: see declaration of 'std::vector<vec3<Real>,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=vec3<Real>
+          ]
+f:\hoomd_win\hoomd_win\ParticleData.h(238): warning C4251: 'SnapshotParticleData<Real>::type_mapping': class 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'SnapshotParticleData<Real>'
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  f:\hoomd_win\hoomd_win\ParticleData.h(238): note: see declaration of 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+f:\hoomd_win\hoomd_win\ParticleData.h(1108): warning C4251: 'ParticleData::m_box': struct 'BoxDim' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\BoxDim.h(69): note: see declaration of 'BoxDim'
+f:\hoomd_win\hoomd_win\ParticleData.h(1109): warning C4251: 'ParticleData::m_global_box': struct 'BoxDim' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\BoxDim.h(69): note: see declaration of 'BoxDim'
+f:\hoomd_win\hoomd_win\ParticleData.h(1110): warning C4251: 'ParticleData::m_exec_conf': class 'std::shared_ptr<ExecutionConfiguration>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(408): note: see declaration of 'std::shared_ptr<ExecutionConfiguration>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1115): warning C4251: 'ParticleData::m_type_mapping': class 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'ParticleData'
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+  f:\hoomd_win\hoomd_win\ParticleData.h(238): note: see declaration of 'std::vector<std::basic_string<char,std::char_traits<char>,std::allocator<char>>,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=std::basic_string<char,std::char_traits<char>,std::allocator<char>>
+          ]
+f:\hoomd_win\hoomd_win\ParticleData.h(1117): warning C4251: 'ParticleData::m_sort_signal': class 'Nano::Signal<void (void)>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(726): note: see declaration of 'Nano::Signal<void (void)>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1118): warning C4251: 'ParticleData::m_boxchange_signal': class 'Nano::Signal<void (void)>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(726): note: see declaration of 'Nano::Signal<void (void)>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1119): warning C4251: 'ParticleData::m_max_particle_num_signal': class 'Nano::Signal<void (void)>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(726): note: see declaration of 'Nano::Signal<void (void)>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1120): warning C4251: 'ParticleData::m_ghost_particles_removed_signal': class 'Nano::Signal<void (void)>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(726): note: see declaration of 'Nano::Signal<void (void)>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1121): warning C4251: 'ParticleData::m_global_particle_num_signal': class 'Nano::Signal<void (void)>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(726): note: see declaration of 'Nano::Signal<void (void)>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1122): warning C4251: 'ParticleData::m_num_types_signal': class 'Nano::Signal<void (void)>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(726): note: see declaration of 'Nano::Signal<void (void)>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1123): warning C4251: 'ParticleData::m_composite_particles_signal': class 'Nano::Signal<double (void)>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(778): note: see declaration of 'Nano::Signal<double (void)>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1136): warning C4251: 'ParticleData::m_pos': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1137): warning C4251: 'ParticleData::m_vel': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1138): warning C4251: 'ParticleData::m_accel': class 'GlobalArray<double3>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(592): note: see declaration of 'GlobalArray<double3>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1139): warning C4251: 'ParticleData::m_charge': class 'GlobalArray<double>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(595): note: see declaration of 'GlobalArray<double>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1140): warning C4251: 'ParticleData::m_diameter': class 'GlobalArray<double>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(595): note: see declaration of 'GlobalArray<double>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1141): warning C4251: 'ParticleData::m_image': class 'GlobalArray<int3>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(601): note: see declaration of 'GlobalArray<int3>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1142): warning C4251: 'ParticleData::m_tag': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1143): warning C4251: 'ParticleData::m_rtag': class 'GlobalVector<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(607): note: see declaration of 'GlobalVector<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1144): warning C4251: 'ParticleData::m_body': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1145): warning C4251: 'ParticleData::m_orientation': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1146): warning C4251: 'ParticleData::m_angmom': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1147): warning C4251: 'ParticleData::m_inertia': class 'GlobalArray<double3>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(592): note: see declaration of 'GlobalArray<double3>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1148): warning C4251: 'ParticleData::m_comm_flags': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1150): warning C4251: 'ParticleData::m_recycled_tags': class 'std::stack<unsigned int,std::deque<_Ty,std::allocator<_Ty>>>' needs to have dll-interface to be used by clients of class 'ParticleData'
+          with
+          [
+              _Ty=unsigned int
+          ]
+  f:\hoomd_win\hoomd_win\ParticleData.h(1150): note: see declaration of 'std::stack<unsigned int,std::deque<_Ty,std::allocator<_Ty>>>'
+          with
+          [
+              _Ty=unsigned int
+          ]
+f:\hoomd_win\hoomd_win\ParticleData.h(1151): warning C4251: 'ParticleData::m_tag_set': class 'std::set<unsigned int,std::less<_Kty>,std::allocator<std::_Vbase>>' needs to have dll-interface to be used by clients of class 'ParticleData'
+          with
+          [
+              _Kty=unsigned int
+          ]
+  f:\hoomd_win\hoomd_win\ParticleData.h(1151): note: see declaration of 'std::set<unsigned int,std::less<_Kty>,std::allocator<std::_Vbase>>'
+          with
+          [
+              _Kty=unsigned int
+          ]
+f:\hoomd_win\hoomd_win\ParticleData.h(1152): warning C4251: 'ParticleData::m_cached_tag_set': class 'std::vector<std::_Vbase,std::allocator<std::_Vbase>>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\vector(2468): note: see declaration of 'std::vector<std::_Vbase,std::allocator<std::_Vbase>>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1164): warning C4251: 'ParticleData::m_pos_alt': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1165): warning C4251: 'ParticleData::m_vel_alt': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1166): warning C4251: 'ParticleData::m_accel_alt': class 'GlobalArray<double3>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(592): note: see declaration of 'GlobalArray<double3>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1167): warning C4251: 'ParticleData::m_charge_alt': class 'GlobalArray<double>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(595): note: see declaration of 'GlobalArray<double>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1168): warning C4251: 'ParticleData::m_diameter_alt': class 'GlobalArray<double>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(595): note: see declaration of 'GlobalArray<double>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1169): warning C4251: 'ParticleData::m_image_alt': class 'GlobalArray<int3>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(601): note: see declaration of 'GlobalArray<int3>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1170): warning C4251: 'ParticleData::m_tag_alt': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1171): warning C4251: 'ParticleData::m_body_alt': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1172): warning C4251: 'ParticleData::m_orientation_alt': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1173): warning C4251: 'ParticleData::m_angmom_alt': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1174): warning C4251: 'ParticleData::m_inertia_alt': class 'GlobalArray<double3>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(592): note: see declaration of 'GlobalArray<double3>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1175): warning C4251: 'ParticleData::m_net_force_alt': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1176): warning C4251: 'ParticleData::m_net_virial_alt': class 'GlobalArray<double>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(595): note: see declaration of 'GlobalArray<double>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1177): warning C4251: 'ParticleData::m_net_torque_alt': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1179): warning C4251: 'ParticleData::m_prof': class 'std::shared_ptr<Profiler>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(720): note: see declaration of 'std::shared_ptr<Profiler>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1181): warning C4251: 'ParticleData::m_net_force': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1182): warning C4251: 'ParticleData::m_net_virial': class 'GlobalArray<double>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(595): note: see declaration of 'GlobalArray<double>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1183): warning C4251: 'ParticleData::m_net_torque': class 'GlobalArray<double4>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(586): note: see declaration of 'GlobalArray<double4>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1188): warning C4251: 'ParticleData::m_flags': class 'std::bitset<32>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\ParticleData.h(91): note: see declaration of 'std::bitset<32>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1196): warning C4251: 'ParticleData::m_mgpu_context': class 'mgpu::intrusive_ptr<mgpu::CudaContext>' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\hoomd\extern\util\mgpualloc.h(12): note: see declaration of 'mgpu::intrusive_ptr<mgpu::CudaContext>'
+f:\hoomd_win\hoomd_win\ParticleData.h(1198): warning C4251: 'ParticleData::m_gpu_partition': class 'GPUPartition' needs to have dll-interface to be used by clients of class 'ParticleData'
+  f:\hoomd_win\hoomd_win\GPUPartition.cuh(12): note: see declaration of 'GPUPartition'
+f:\hoomd_win\hoomd_win\ParticleData.h(508): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
+f:\hoomd_win\hoomd_win\Initializers.h(42): warning C4251: 'SimpleCubicInitializer::box': struct 'BoxDim' needs to have dll-interface to be used by clients of class 'SimpleCubicInitializer'
+  f:\hoomd_win\hoomd_win\BoxDim.h(69): note: see declaration of 'BoxDim'
+f:\hoomd_win\hoomd_win\Initializers.h(43): warning C4251: 'SimpleCubicInitializer::m_type_name': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'SimpleCubicInitializer'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\hoomd_win\hoomd_win\Initializers.h(69): warning C4251: 'RandomInitializer::m_box': struct 'BoxDim' needs to have dll-interface to be used by clients of class 'RandomInitializer'
+  f:\hoomd_win\hoomd_win\BoxDim.h(69): note: see declaration of 'BoxDim'
+f:\hoomd_win\hoomd_win\Initializers.h(70): warning C4251: 'RandomInitializer::m_type_name': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of class 'RandomInitializer'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\hoomd_win\hoomd_win\IntegratorData.h(34): warning C4251: 'IntegratorVariables::type': class 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' needs to have dll-interface to be used by clients of struct 'IntegratorVariables'
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xstring(4373): note: see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+f:\hoomd_win\hoomd_win\IntegratorData.h(35): warning C4251: 'IntegratorVariables::variable': class 'std::vector<double,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of struct 'IntegratorVariables'
+          with
+          [
+              _Ty=double
+          ]
+  f:\hoomd_win\hoomd_win\IntegratorData.h(35): note: see declaration of 'std::vector<double,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=double
+          ]
+f:\hoomd_win\hoomd_win\IntegratorData.h(122): warning C4251: 'IntegratorData::m_integrator_variables': class 'std::vector<IntegratorVariables,std::allocator<_Ty>>' needs to have dll-interface to be used by clients of class 'IntegratorData'
+          with
+          [
+              _Ty=IntegratorVariables
+          ]
+  f:\hoomd_win\hoomd_win\IntegratorData.h(73): note: see declaration of 'std::vector<IntegratorVariables,std::allocator<_Ty>>'
+          with
+          [
+              _Ty=IntegratorVariables
+          ]
+f:\hoomd_win\hoomd_win\SystemDefinition.h(163): warning C4251: 'SystemDefinition::m_particle_data': class 'std::shared_ptr<ParticleData>' needs to have dll-interface to be used by clients of class 'SystemDefinition'
+  f:\hoomd_win\hoomd_win\SystemDefinition.h(102): note: see declaration of 'std::shared_ptr<ParticleData>'
+f:\hoomd_win\hoomd_win\SystemDefinition.h(171): warning C4251: 'SystemDefinition::m_integrator_data': class 'std::shared_ptr<IntegratorData>' needs to have dll-interface to be used by clients of class 'SystemDefinition'
+  f:\hoomd_win\hoomd_win\SystemDefinition.h(135): note: see declaration of 'std::shared_ptr<IntegratorData>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(63): warning C4251: 'ParticleSelector::m_sysdef': class 'std::shared_ptr<SystemDefinition>' needs to have dll-interface to be used by clients of class 'ParticleSelector'
+  f:\hoomd_win\hoomd_win\ParticleGroup.h(56): note: see declaration of 'std::shared_ptr<SystemDefinition>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(64): warning C4251: 'ParticleSelector::m_pdata': class 'std::shared_ptr<ParticleData>' needs to have dll-interface to be used by clients of class 'ParticleSelector'
+  f:\hoomd_win\hoomd_win\SystemDefinition.h(102): note: see declaration of 'std::shared_ptr<ParticleData>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(65): warning C4251: 'ParticleSelector::m_exec_conf': class 'std::shared_ptr<const ExecutionConfiguration>' needs to have dll-interface to be used by clients of class 'ParticleSelector'
+  f:\hoomd_win\hoomd_win\GPUArray.h(97): note: see declaration of 'std::shared_ptr<const ExecutionConfiguration>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(361): warning C4251: 'ParticleGroup::m_sysdef': class 'std::shared_ptr<SystemDefinition>' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\ParticleGroup.h(56): note: see declaration of 'std::shared_ptr<SystemDefinition>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(362): warning C4251: 'ParticleGroup::m_pdata': class 'std::shared_ptr<ParticleData>' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\SystemDefinition.h(102): note: see declaration of 'std::shared_ptr<ParticleData>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(363): warning C4251: 'ParticleGroup::m_exec_conf': class 'std::shared_ptr<const ExecutionConfiguration>' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\GPUArray.h(97): note: see declaration of 'std::shared_ptr<const ExecutionConfiguration>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(367): warning C4251: 'ParticleGroup::m_is_member': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(368): warning C4251: 'ParticleGroup::m_member_idx': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(369): warning C4251: 'ParticleGroup::m_member_tags': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(375): warning C4251: 'ParticleGroup::m_is_member_tag': class 'GlobalArray<unsigned int>' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\ParticleData.h(604): note: see declaration of 'GlobalArray<unsigned int>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(376): warning C4251: 'ParticleGroup::m_selector': class 'std::shared_ptr<ParticleSelector>' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\ParticleGroup.h(229): note: see declaration of 'std::shared_ptr<ParticleSelector>'
+f:\hoomd_win\hoomd_win\ParticleGroup.h(382): warning C4251: 'ParticleGroup::m_gpu_partition': class 'GPUPartition' needs to have dll-interface to be used by clients of class 'ParticleGroup'
+  f:\hoomd_win\hoomd_win\GPUPartition.cuh(12): note: see declaration of 'GPUPartition'
+f:\hoomd_win\hoomd_win\GlobalArray.h(119): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+  f:\hoomd_win\hoomd_win\GlobalArray.h(115): note: while compiling class template member function 'hoomd::detail::managed_deleter<T>::managed_deleter(std::shared_ptr<const ExecutionConfiguration>,bool,size_t,void *,size_t)'
+          with
+          [
+              T=unsigned int
+          ]
+  f:\hoomd_win\hoomd_win\GlobalArray.h(767): note: see reference to function template instantiation 'hoomd::detail::managed_deleter<T>::managed_deleter(std::shared_ptr<const ExecutionConfiguration>,bool,size_t,void *,size_t)' being compiled
+          with
+          [
+              T=unsigned int
+          ]
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\memory(2132): note: see reference to class template instantiation 'hoomd::detail::managed_deleter<T>' being compiled
+          with
+          [
+              T=unsigned int
+          ]
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\memory(2179): note: see reference to class template instantiation 'std::_Unique_ptr_base<_Ty,_Dx>' being compiled
+          with
+          [
+              _Ty=unsigned int,
+              _Dx=hoomd::detail::managed_deleter<unsigned int>
+          ]
+  f:\hoomd_win\hoomd_win\GlobalArray.h(680): note: see reference to class template instantiation 'std::unique_ptr<T,hoomd::detail::managed_deleter<T>>' being compiled
+          with
+          [
+              T=unsigned int
+          ]
+  f:\hoomd_win\hoomd_win\ParticleData.h(1142): note: see reference to class template instantiation 'GlobalArray<unsigned int>' being compiled
   ParticleGroup.cc
 f:\hoomd_win\hoomd_win\messenger.h(267): warning C4251: 'Messenger::m_mpi_config': class 'std::shared_ptr<MPIConfiguration>' needs to have dll-interface to be used by clients of class 'Messenger'
   f:\hoomd_win\hoomd_win\messenger.h(106): note: see declaration of 'std::shared_ptr<MPIConfiguration>'
@@ -565,8 +1116,8 @@ f:\hoomd_win\hoomd_win\cachedallocator.h(225): warning C4244: '-=': conversion f
           ]
      Creating library F:\hoomd_win\x64\Release\hoomd_win.lib and object F:\hoomd_win\x64\Release\hoomd_win.exp
   Generating code
-  0 of 7734 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+  864 of 7752 functions (11.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+    122 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   hoomd_win.vcxproj -> F:\hoomd_win\x64\Release\hoomd_win.exe

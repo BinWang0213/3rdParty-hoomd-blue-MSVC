@@ -611,7 +611,8 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.1
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\deque
 f:\hoomd_win\hoomd_win\Initializers.h
 f:\hoomd_win\hoomd_win\ParticleData.h
-f:\hoomd_win\hoomd_win\SnapshotSystemData.h
+f:\hoomd_win\hoomd_win\ParticleGroup.h
+f:\hoomd_win\hoomd_win\SystemDefinition.h
 f:\hoomd_win\hoomd_win\ParticleData.h
 f:\hoomd_win\hoomd_win\IntegratorData.h
 f:\hoomd_win\hoomd_win\ParticleData.h
