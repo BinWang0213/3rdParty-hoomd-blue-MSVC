@@ -39,54 +39,24 @@
 namespace mgpu {
 
 MGPU_HOST_DEVICE uint2 ulonglong_as_uint2(uint64 x) {
-    union {
-        uint64 in;
-        uint2 out;
-    };
-	in = x;
-    return out;
+	return *reinterpret_cast<uint2*>(&x);
 }
 MGPU_HOST_DEVICE uint64 uint2_as_ulonglong(uint2 x) {
-    union {
-        uint2 in;
-        uint64 out;
-    };
-    in = x;
-    return out;
+	return *reinterpret_cast<uint64*>(&x);
 }
 
 MGPU_HOST_DEVICE int2 longlong_as_int2(int64 x) {
-    union {
-        int64 in;
-        int2 out;
-    };
-    in = x;
-    return out;
+	return *reinterpret_cast<int2*>(&x);
 }
 MGPU_HOST_DEVICE int64 int2_as_longlong(int2 x) {
-    union {
-        int2 in;
-        int64 out;
-    };
-    in = x;
-    return out;
+	return *reinterpret_cast<int64*>(&x);
 }
 
 MGPU_HOST_DEVICE int2 double_as_int2(double x) {
-	union {
-        double in;
-        int2 out;
-    };
-    in = x;
-    return out;
+	return *reinterpret_cast<int2*>(&x);
 }
 MGPU_HOST_DEVICE double int2_as_double(int2 x) {
-	union {
-        int2 in;
-        double out;
-    };
-    in = x;
-    return out;
+	return *reinterpret_cast<double*>(&x);
 }
 
 MGPU_HOST_DEVICE void SetDoubleX(double& d, int x) {
@@ -159,7 +129,7 @@ __device__ __forceinline__ double shfl_up(double var,
 
 ////////////////////////////////////////////////////////////////////////////////
 // shfl_add
-#if 0
+
 MGPU_DEVICE int shfl_add(int x, int offset, int width = WARP_SIZE) {
 	int result = 0;
 #if __CUDA_ARCH__ >= 300
@@ -189,7 +159,6 @@ MGPU_DEVICE int shfl_max(int x, int offset, int width = WARP_SIZE) {
 #endif
 	return result;
 }
-#endif
 
 ////////////////////////////////////////////////////////////////////////////////
 // brev, popc, clz, bfe, bfi, prmt

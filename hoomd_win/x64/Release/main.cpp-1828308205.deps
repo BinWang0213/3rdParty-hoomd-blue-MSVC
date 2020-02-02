@@ -598,6 +598,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.1
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h
 f:\hoomd_win\hoomd_win\hoomd\extern\util\format.h
 f:\hoomd_win\hoomd_win\hoomd\extern\util\mgpualloc.h
+C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\include\cuda_runtime.h
 F:\hoomd_win\hoomd_win\hoomd/extern/nano-signal-slot/nano_signal_slot.hpp
 f:\hoomd_win\hoomd_win\hoomd\extern\nano-signal-slot\nano_function.hpp
 f:\hoomd_win\hoomd_win\hoomd\extern\nano-signal-slot\nano_observer.hpp

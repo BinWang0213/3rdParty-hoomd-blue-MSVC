@@ -77,6 +77,7 @@
     </Link>
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
+      <CodeGeneration>compute_75,sm_75</CodeGeneration>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -97,14 +98,16 @@
     <ClInclude Include="GPUVector.h" />
     <ClInclude Include="HOOMDMath.h" />
     <ClInclude Include="HOOMDVersion.h" />
-    <ClInclude Include="hoomd\extern\util\mgpucontext.h" />
+    <ClInclude Include="Index1D.h" />
     <ClInclude Include="Initializers.h" />
+    <ClInclude Include="IntegratorData.h" />
     <ClInclude Include="MemoryTraceback.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="MPIConfiguration.h" />
     <ClInclude Include="ParticleData.cuh" />
     <ClInclude Include="ParticleData.h" />
     <ClInclude Include="Profiler.h" />
+    <ClInclude Include="SnapshotSystemData.h" />
     <ClInclude Include="VectorMath.h" />
   </ItemGroup>
   <ItemGroup>
@@ -112,13 +115,15 @@
     <ClCompile Include="ExecutionConfiguration.cc" />
     <ClCompile Include="HOOMDMath.cc" />
     <ClCompile Include="HOOMDVersion.cc" />
-    <ClCompile Include="hoomd\extern\mgpuutil.cc" />
+    <ClCompile Include="hoomd\extern\mgpuutil.cpp" />
     <ClCompile Include="Initializers.cc" />
+    <ClCompile Include="IntegratorData.cc" />
     <ClCompile Include="MemoryTraceback.cc" />
     <ClCompile Include="Messenger.cc" />
     <ClCompile Include="MPIConfiguration.cc" />
     <ClCompile Include="ParticleData.cc" />
     <ClCompile Include="Profiler.cc" />
+    <ClCompile Include="SnapshotSystemData.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

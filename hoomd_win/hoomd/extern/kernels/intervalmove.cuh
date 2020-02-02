@@ -101,9 +101,9 @@ MGPU_HOST void IntervalExpand(int moveCount, IndicesIt indices_global,
 	ValuesIt values_global, int intervalCount, OutputIt output_global,
 	CudaContext& context) {
 
-	//const int NT = 128;
-	//const int VT = 7;
-	typedef LaunchBoxVT<128, 7> Tuning;
+	const int NT = 128;
+	const int VT = 7;
+	typedef LaunchBoxVT<NT, VT> Tuning;
 	int2 launch = Tuning::GetLaunchParams(context);
 
 	int NV = launch.x * launch.y;
@@ -277,8 +277,8 @@ MGPU_HOST void IntervalMove(int moveCount, GatherIt gather_global,
 	ScatterIt scatter_global, IndicesIt indices_global, int intervalCount, 
 	InputIt input_global, OutputIt output_global, CudaContext& context) {
 
-	const int __attribute__((unused)) NT = 128;
-	const int __attribute__((unused)) VT = 7;
+	const int NT = 128;
+	const int VT = 7;
 	typedef LaunchBoxVT<NT, VT> Tuning;
 	int2 launch = Tuning::GetLaunchParams(context);
 

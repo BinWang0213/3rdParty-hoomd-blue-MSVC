@@ -17,7 +17,7 @@
 
 #include "BoxDim.h"
 #include "ParticleData.h"
-#include "BondedGroupData.h"
+//#include "BondedGroupData.h"
 #include "IntegratorData.h"
 
 #ifndef NVCC
@@ -47,12 +47,12 @@ struct SnapshotSystemData {
     BoxDim global_box;                     //!< The dimensions of the simulation box
     SnapshotParticleData<Real> particle_data;    //!< The particle data
     std::map<unsigned int, unsigned int> map; //!< Lookup particle index by tag
-    BondData::Snapshot bond_data;          //!< The bond data
-    AngleData::Snapshot angle_data;         //!< The angle data
-    DihedralData::Snapshot dihedral_data;    //!< The dihedral data
-    ImproperData::Snapshot improper_data;    //!< The improper data
-    ConstraintData::Snapshot constraint_data;//!< The constraint data
-    PairData::Snapshot pair_data;            //!< The pair data
+    //BondData::Snapshot bond_data;          //!< The bond data
+    //AngleData::Snapshot angle_data;         //!< The angle data
+    //DihedralData::Snapshot dihedral_data;    //!< The dihedral data
+    //ImproperData::Snapshot improper_data;    //!< The improper data
+    //ConstraintData::Snapshot constraint_data;//!< The constraint data
+    //PairData::Snapshot pair_data;            //!< The pair data
     std::vector<IntegratorVariables> integrator_data;  //!< The integrator data
 
     bool has_particle_data;                //!< True if snapshot contains particle data

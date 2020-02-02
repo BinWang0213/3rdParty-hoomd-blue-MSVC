@@ -33,7 +33,8 @@ void SnapshotSystemData<Real>::replicate(unsigned int nx, unsigned int ny, unsig
     // replicate snapshots
     if (has_particle_data)
         particle_data.replicate(nx, ny, nz, old_box, global_box);
-    if (has_bond_data)
+    /*
+	if (has_bond_data)
         bond_data.replicate(n,old_n);
     if (has_angle_data)
         angle_data.replicate(n,old_n);
@@ -45,7 +46,9 @@ void SnapshotSystemData<Real>::replicate(unsigned int nx, unsigned int ny, unsig
         constraint_data.replicate(n,old_n);
     if (has_pair_data)
         pair_data.replicate(n,old_n);
+	*/
     }
+
 
 template <class Real>
 void SnapshotSystemData<Real>::broadcast_box(std::shared_ptr<ExecutionConfiguration> exec_conf)
@@ -138,12 +141,12 @@ void export_SnapshotSystemData(py::module& m)
     .def_readwrite("_dimensions", &SnapshotSystemData<float>::dimensions)
     .def_readwrite("_global_box", &SnapshotSystemData<float>::global_box)
     .def_readonly("particles", &SnapshotSystemData<float>::particle_data)
-    .def_readonly("bonds", &SnapshotSystemData<float>::bond_data)
-    .def_readonly("angles", &SnapshotSystemData<float>::angle_data)
-    .def_readonly("dihedrals", &SnapshotSystemData<float>::dihedral_data)
-    .def_readonly("impropers", &SnapshotSystemData<float>::improper_data)
-    .def_readonly("constraints", &SnapshotSystemData<float>::constraint_data)
-    .def_readonly("pairs", &SnapshotSystemData<float>::pair_data)
+    //.def_readonly("bonds", &SnapshotSystemData<float>::bond_data)
+    //.def_readonly("angles", &SnapshotSystemData<float>::angle_data)
+    //.def_readonly("dihedrals", &SnapshotSystemData<float>::dihedral_data)
+    //.def_readonly("impropers", &SnapshotSystemData<float>::improper_data)
+    //.def_readonly("constraints", &SnapshotSystemData<float>::constraint_data)
+    //.def_readonly("pairs", &SnapshotSystemData<float>::pair_data)
     .def_readonly("has_particle_data", &SnapshotSystemData<float>::has_particle_data)
     .def_readonly("has_bond_data", &SnapshotSystemData<float>::has_bond_data)
     .def_readonly("has_angle_data", &SnapshotSystemData<float>::has_angle_data)
@@ -162,12 +165,12 @@ void export_SnapshotSystemData(py::module& m)
     .def_readwrite("_dimensions", &SnapshotSystemData<double>::dimensions)
     .def_readwrite("_global_box", &SnapshotSystemData<double>::global_box)
     .def_readonly("particles", &SnapshotSystemData<double>::particle_data)
-    .def_readonly("bonds", &SnapshotSystemData<double>::bond_data)
-    .def_readonly("angles", &SnapshotSystemData<double>::angle_data)
-    .def_readonly("dihedrals", &SnapshotSystemData<double>::dihedral_data)
-    .def_readonly("impropers", &SnapshotSystemData<double>::improper_data)
-    .def_readonly("constraints", &SnapshotSystemData<double>::constraint_data)
-    .def_readonly("pairs", &SnapshotSystemData<double>::pair_data)
+    //.def_readonly("bonds", &SnapshotSystemData<double>::bond_data)
+    //.def_readonly("angles", &SnapshotSystemData<double>::angle_data)
+    //.def_readonly("dihedrals", &SnapshotSystemData<double>::dihedral_data)
+    //.def_readonly("impropers", &SnapshotSystemData<double>::improper_data)
+    //.def_readonly("constraints", &SnapshotSystemData<double>::constraint_data)
+    //.def_readonly("pairs", &SnapshotSystemData<double>::pair_data)
     .def_readonly("has_particle_data", &SnapshotSystemData<double>::has_particle_data)
     .def_readonly("has_bond_data", &SnapshotSystemData<double>::has_bond_data)
     .def_readonly("has_angle_data", &SnapshotSystemData<double>::has_angle_data)

@@ -99,11 +99,17 @@
     <ClInclude Include="ParticleData.cuh">
       <Filter>Header Files\particles</Filter>
     </ClInclude>
-    <ClInclude Include="hoomd\extern\util\mgpucontext.h">
-      <Filter>Header Files\utils\moderngpu</Filter>
-    </ClInclude>
     <ClInclude Include="Initializers.h">
       <Filter>Header Files\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="SnapshotSystemData.h">
+      <Filter>Header Files\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="IntegratorData.h">
+      <Filter>Header Files\particles</Filter>
+    </ClInclude>
+    <ClInclude Include="Index1D.h">
+      <Filter>Header Files\common</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -146,11 +152,17 @@
     <ClCompile Include="ParticleData.cc">
       <Filter>Source Files\particles</Filter>
     </ClCompile>
-    <ClCompile Include="hoomd\extern\mgpuutil.cc">
-      <Filter>Source Files\utils\moderngpu</Filter>
-    </ClCompile>
     <ClCompile Include="Initializers.cc">
       <Filter>Source Files\particles</Filter>
+    </ClCompile>
+    <ClCompile Include="SnapshotSystemData.cc">
+      <Filter>Source Files\particles</Filter>
+    </ClCompile>
+    <ClCompile Include="IntegratorData.cc">
+      <Filter>Source Files\particles</Filter>
+    </ClCompile>
+    <ClCompile Include="hoomd\extern\mgpuutil.cpp">
+      <Filter>Source Files\utils\moderngpu</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
