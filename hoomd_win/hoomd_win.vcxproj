@@ -98,6 +98,7 @@
     <ClInclude Include="HOOMDMath.h" />
     <ClInclude Include="HOOMDVersion.h" />
     <ClInclude Include="hoomd\extern\util\mgpucontext.h" />
+    <ClInclude Include="Initializers.h" />
     <ClInclude Include="MemoryTraceback.h" />
     <ClInclude Include="Messenger.h" />
     <ClInclude Include="MPIConfiguration.h" />
@@ -112,6 +113,7 @@
     <ClCompile Include="HOOMDMath.cc" />
     <ClCompile Include="HOOMDVersion.cc" />
     <ClCompile Include="hoomd\extern\mgpuutil.cc" />
+    <ClCompile Include="Initializers.cc" />
     <ClCompile Include="MemoryTraceback.cc" />
     <ClCompile Include="Messenger.cc" />
     <ClCompile Include="MPIConfiguration.cc" />

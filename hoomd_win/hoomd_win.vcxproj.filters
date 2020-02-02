@@ -102,6 +102,9 @@
     <ClInclude Include="hoomd\extern\util\mgpucontext.h">
       <Filter>Header Files\utils\moderngpu</Filter>
     </ClInclude>
+    <ClInclude Include="Initializers.h">
+      <Filter>Header Files\particles</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
@@ -145,6 +148,9 @@
     </ClCompile>
     <ClCompile Include="hoomd\extern\mgpuutil.cc">
       <Filter>Source Files\utils\moderngpu</Filter>
+    </ClCompile>
+    <ClCompile Include="Initializers.cc">
+      <Filter>Source Files\particles</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
