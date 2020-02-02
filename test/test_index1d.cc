@@ -18,7 +18,7 @@ using namespace std;
 
 
 //! test case for 1x1 Index2D
-TEST_CASE(Index2D_1)
+TEST_CASE("Index2D_1")
 {
 	Index2D a(1);
 	REQUIRE(a.getNumElements()== (unsigned int)1);
@@ -26,7 +26,7 @@ TEST_CASE(Index2D_1)
 }
 
 //! test case for 2x2 Index2D
-TEST_CASE(Index2D_2)
+TEST_CASE("Index2D_2")
 {
 	Index2D a(2);
 	REQUIRE(a.getNumElements()== (unsigned int)4);
@@ -37,7 +37,7 @@ TEST_CASE(Index2D_2)
 }
 
 //! test case for 3x3 Index2D
-TEST_CASE(Index2D_3)
+TEST_CASE("Index2D_3")
 {
 	Index2D a(3);
 	REQUIRE(a.getNumElements()== (unsigned int)9);
@@ -53,7 +53,7 @@ TEST_CASE(Index2D_3)
 }
 
 //! test case for 2x2x2 Index3D
-TEST_CASE(Index3D_2)
+TEST_CASE("Index3D_2")
 {
 	Index3D a(2);
 	REQUIRE(a.getNumElements()== (unsigned int)8);
@@ -68,7 +68,7 @@ TEST_CASE(Index3D_2)
 }
 
 //! test case for 4x3x2 Index3D
-TEST_CASE(Index3D_432)
+TEST_CASE("Index3D_432")
 {
 	Index3D a(4, 3, 2);
 	REQUIRE(a.getNumElements()== (unsigned int)24);
@@ -100,7 +100,7 @@ TEST_CASE(Index3D_432)
 }
 
 //! test case for 20x20 Index2D
-TEST_CASE(Index2D_20)
+TEST_CASE("Index2D_20")
 {
 	Index2D a(20);
 	REQUIRE(a.getNumElements()== (unsigned int)20 * 20);
@@ -113,7 +113,7 @@ TEST_CASE(Index2D_20)
 }
 
 //! test case for 1x1 Index2DUpperTriangular
-TEST_CASE(Index2DUpperTriangular_1)
+TEST_CASE("Index2DUpperTriangular_1")
 {
 	Index2DUpperTriangular a(1);
 	REQUIRE(a.getNumElements()== (unsigned int)1);
@@ -121,7 +121,7 @@ TEST_CASE(Index2DUpperTriangular_1)
 }
 
 //! test case for 2x2 Index2DUpperTriangular
-TEST_CASE(Index2DUpperTriangular_2)
+TEST_CASE("Index2DUpperTriangular_2")
 {
 	Index2DUpperTriangular a(2);
 	REQUIRE(a.getNumElements()== (unsigned int)3);
@@ -131,7 +131,7 @@ TEST_CASE(Index2DUpperTriangular_2)
 }
 
 //! test case for 3x3 Index2DUpperTriangular
-TEST_CASE(Index2DUpperTriangular_3)
+TEST_CASE("Index2DUpperTriangular_3")
 {
 	Index2DUpperTriangular a(3);
 	REQUIRE(a.getNumElements()== (unsigned int)6);
@@ -144,7 +144,7 @@ TEST_CASE(Index2DUpperTriangular_3)
 }
 
 //! test case for 20x20 Index2DUpperTriangular
-TEST_CASE(Index2DUpperTriangular_20)
+TEST_CASE("Index2DUpperTriangular_20")
 {
 	Index2DUpperTriangular a(20);
 	REQUIRE(a.getNumElements()== (unsigned int)20 * 21 / 2);

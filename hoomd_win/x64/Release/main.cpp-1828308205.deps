@@ -366,7 +366,8 @@ f:\hoomd_win\hoomd_win\MemoryTraceback.h
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\map
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\xtree
 f:\hoomd_win\hoomd_win\Messenger.h
-f:\hoomd_win\hoomd_win\Index1D.h
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\math.h
+f:\hoomd_win\hoomd_win\VectorMath.h
 F:\hoomd_win\3rdParty\Catch2\single_include\catch2/catch.hpp
 C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\include\cassert
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\assert.h

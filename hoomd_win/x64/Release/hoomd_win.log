@@ -26,6 +26,7 @@ f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(350): warning : field of class t
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(357): warning : field of class type without a DLL interface used in a class with a DLL interface
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(358): warning : field of class type without a DLL interface used in a class with a DLL interface
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(369): warning : field of class type without a DLL interface used in a class with a DLL interface
+F:/hoomd_win/hoomd_win/main.cpp(24): warning : variable "tol" was declared but never referenced
 f:\hoomd_win\hoomd_win\Messenger.h(267): warning : field of class type without a DLL interface used in a class with a DLL interface
 f:\hoomd_win\hoomd_win\Messenger.h(273): warning : field of class type without a DLL interface used in a class with a DLL interface
 f:\hoomd_win\hoomd_win\Messenger.h(274): warning : field of class type without a DLL interface used in a class with a DLL interface
@@ -167,10 +168,55 @@ f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(369): warning C4251: 'ExecutionC
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(147): warning C4267: 'return': conversion from 'size_t' to 'unsigned int', possible loss of data
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(162): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
 f:\hoomd_win\hoomd_win\ExecutionConfiguration.h(172): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+f:\hoomd_win\hoomd_win\VectorMath.h(750): warning C4244: 'initializing': conversion from 'const Real' to 'Real', possible loss of data
+          with
+          [
+              Real=double
+          ]
+          and
+          [
+              Real=float
+          ]
+  f:\hoomd_win\hoomd_win\VectorMath.h(750): note: while compiling class template member function 'quat<float>::quat(const quat<double> &)'
+  F:/hoomd_win/hoomd_win/main.cpp(74): note: see reference to function template instantiation 'quat<float>::quat(const quat<double> &)' being compiled
+  F:/hoomd_win/hoomd_win/main.cpp(48): note: see reference to class template instantiation 'quat<float>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1561): note: see reference to class template instantiation 'pybind11::detail::descr<8>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1559): note: see reference to class template instantiation 'pybind11::detail::descr<5>' being compiled
+  f:\hoomd_win\hoomd_win\hoomd\extern\pybind\include\pybind11\cast.h(1113): note: see reference to class template instantiation 'pybind11::detail::descr<7>' being compiled
+f:\hoomd_win\hoomd_win\VectorMath.h(70): warning C4244: 'initializing': conversion from 'const Real' to 'Real', possible loss of data
+          with
+          [
+              Real=double
+          ]
+          and
+          [
+              Real=float
+          ]
+  f:\hoomd_win\hoomd_win\VectorMath.h(70): note: while compiling class template member function 'vec3<float>::vec3(const vec3<double> &)'
+  f:\hoomd_win\hoomd_win\VectorMath.h(750): note: see reference to function template instantiation 'vec3<float>::vec3(const vec3<double> &)' being compiled
+  f:\hoomd_win\hoomd_win\VectorMath.h(781): note: see reference to class template instantiation 'vec3<float>' being compiled
+f:\hoomd_win\hoomd_win\VectorMath.h(70): warning C4244: 'initializing': conversion from 'const Real' to 'Real', possible loss of data
+          with
+          [
+              Real=double
+          ]
+          and
+          [
+              Real=float
+          ]
+f:\hoomd_win\hoomd_win\VectorMath.h(70): warning C4244: 'initializing': conversion from 'const Real' to 'Real', possible loss of data
+          with
+          [
+              Real=double
+          ]
+          and
+          [
+              Real=float
+          ]
      Creating library F:\hoomd_win\x64\Release\hoomd_win.lib and object F:\hoomd_win\x64\Release\hoomd_win.exp
   Generating code
-  1446 of 7292 functions (19.8%) were compiled, the rest were copied from previous compilation.
+  0 of 7292 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    169 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   Finished generating code
   hoomd_win.vcxproj -> F:\hoomd_win\x64\Release\hoomd_win.exe
