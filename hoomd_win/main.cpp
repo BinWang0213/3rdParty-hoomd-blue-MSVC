@@ -8,6 +8,8 @@
 #include <iostream>
 
 #include "ParticleData.h"
+#include "Initializers.h"
+#include "SnapshotSystemData.h"
 
 using namespace std;
 
@@ -227,3 +229,59 @@ TEST_CASE("ParticleData_test")
 }
 
 
+//! Tests the RandomParticleInitializer class
+TEST_CASE("Random_test")
+{
+	// create a fairly dense system with a minimum distance of 0.8
+	std::shared_ptr<ExecutionConfiguration> exec_conf(new ExecutionConfiguration(ExecutionConfiguration::GPU));
+	Scalar min_dist = Scalar(0.8);
+	RandomInitializer rand_init(500, Scalar(0.4), min_dist, "ABC");
+	std::shared_ptr< SnapshotSystemData<Scalar> > snap = rand_init.getSnapshot();
+	ParticleData pdata(snap->particle_data, snap->global_box, exec_conf);
+
+	REQUIRE(pdata.getNameByType(0)== "ABC");
+	REQUIRE(pdata.getTypeByName("ABC")== (unsigned int)0);
+
+	{
+		ArrayHandle<Scalar4> h_pos(pdata.getPositions(), access_location::host, access_mode::read);
+
+		// check that the distances between particles are OK
+		BoxDim box = pdata.getBox();
+		Scalar L = box.getL().x;
+		for (unsigned int i = 0; i < pdata.getN(); i++)
+		{
+			REQUIRE(h_pos.data[i].x <= box.getHi().x); REQUIRE(h_pos.data[i].x >= box.getLo().x);
+			REQUIRE(h_pos.data[i].y <= box.getHi().x); REQUIRE(h_pos.data[i].y >= box.getLo().x);
+			REQUIRE(h_pos.data[i].z <= box.getHi().x); REQUIRE(h_pos.data[i].z >= box.getLo().x);
+
+			for (unsigned int j = 0; j < pdata.getN(); j++)
+			{
+				if (i == j)
+					continue;
+
+				Scalar dx = h_pos.data[j].x - h_pos.data[i].x;
+				Scalar dy = h_pos.data[j].y - h_pos.data[i].y;
+				Scalar dz = h_pos.data[j].z - h_pos.data[i].z;
+
+				if (dx < -L / Scalar(2.0))
+					dx += L;
+				if (dx > L / Scalar(2.0))
+					dx -= L;
+
+				if (dy < -L / Scalar(2.0))
+					dy += L;
+				if (dy > L / Scalar(2.0))
+					dy -= L;
+
+				if (dz < -L / Scalar(2.0))
+					dz += L;
+				if (dz > L / Scalar(2.0))
+					dz -= L;
+
+				Scalar dr2 = dx * dx + dy * dy + dz * dz;
+				REQUIRE(dr2 >= min_dist * min_dist);
+			}
+		}
+
+	}
+}
