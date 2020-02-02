@@ -51,13 +51,15 @@ SystemDefinition::SystemDefinition(unsigned int N,
     {
     m_n_dimensions = 3;
     m_particle_data = std::shared_ptr<ParticleData>(new ParticleData(N, box, n_types, exec_conf, decomposition));
-    m_bond_data = std::shared_ptr<BondData>(new BondData(m_particle_data, n_bond_types));
+    /*
+	m_bond_data = std::shared_ptr<BondData>(new BondData(m_particle_data, n_bond_types));
 
     m_angle_data = std::shared_ptr<AngleData>(new AngleData(m_particle_data, n_angle_types));
     m_dihedral_data = std::shared_ptr<DihedralData>(new DihedralData(m_particle_data, n_dihedral_types));
     m_improper_data = std::shared_ptr<ImproperData>(new ImproperData(m_particle_data, n_improper_types));
     m_constraint_data = std::shared_ptr<ConstraintData>(new ConstraintData(m_particle_data, 0));
     m_pair_data = std::shared_ptr<PairData>(new PairData(m_particle_data, 0));
+	*/
     m_integrator_data = std::shared_ptr<IntegratorData>(new IntegratorData());
     }
 
@@ -84,7 +86,7 @@ SystemDefinition::SystemDefinition(std::shared_ptr< SnapshotSystemData<Real> > s
     if (m_particle_data->getDomainDecomposition())
         bcast(m_n_dimensions, 0,exec_conf->getMPICommunicator());
     #endif
-
+	/*
     m_bond_data = std::shared_ptr<BondData>(new BondData(m_particle_data, snapshot->bond_data));
 
     m_angle_data = std::shared_ptr<AngleData>(new AngleData(m_particle_data, snapshot->angle_data));
@@ -95,7 +97,8 @@ SystemDefinition::SystemDefinition(std::shared_ptr< SnapshotSystemData<Real> > s
 
     m_constraint_data = std::shared_ptr<ConstraintData>(new ConstraintData(m_particle_data, snapshot->constraint_data));
     m_pair_data = std::shared_ptr<PairData>(new PairData(m_particle_data, snapshot->pair_data));
-    m_integrator_data = std::shared_ptr<IntegratorData>(new IntegratorData(snapshot->integrator_data));
+    */
+	m_integrator_data = std::shared_ptr<IntegratorData>(new IntegratorData(snapshot->integrator_data));
     }
 
 /*! Sets the dimensionality of the system.  When quantities involving the dof of
@@ -146,7 +149,7 @@ std::shared_ptr< SnapshotSystemData<Real> > SystemDefinition::takeSnapshot(bool 
         }
     else
         snap->has_particle_data = false;
-
+	/*
     if (bonds)
         {
         m_bond_data->takeSnapshot(snap->bond_data);
@@ -194,7 +197,7 @@ std::shared_ptr< SnapshotSystemData<Real> > SystemDefinition::takeSnapshot(bool 
         }
     else
         snap->has_pair_data = false;
-
+	*/
     if (integrators)
         {
         for (unsigned int i = 0; i < m_integrator_data->getNumIntegrators(); ++i)
@@ -225,7 +228,7 @@ void SystemDefinition::initializeFromSnapshot(std::shared_ptr< SnapshotSystemDat
         m_particle_data->setGlobalBox(snapshot->global_box);
         m_particle_data->initializeFromSnapshot(snapshot->particle_data);
         }
-
+	/*
     if (snapshot->has_bond_data)
         m_bond_data->initializeFromSnapshot(snapshot->bond_data);
 
@@ -243,7 +246,7 @@ void SystemDefinition::initializeFromSnapshot(std::shared_ptr< SnapshotSystemDat
 
     if (snapshot->has_pair_data)
         m_pair_data->initializeFromSnapshot(snapshot->pair_data);
-
+	*/
     // it is an error to load variables for more integrators than are
     // currently registered
     if (snapshot->has_integrator_data)
@@ -303,13 +306,15 @@ void export_SystemDefinition(py::module& m)
     .def("setNDimensions", &SystemDefinition::setNDimensions)
     .def("getNDimensions", &SystemDefinition::getNDimensions)
     .def("getParticleData", &SystemDefinition::getParticleData)
+	 /*
     .def("getBondData", &SystemDefinition::getBondData)
     .def("getAngleData", &SystemDefinition::getAngleData)
     .def("getDihedralData", &SystemDefinition::getDihedralData)
     .def("getImproperData", &SystemDefinition::getImproperData)
-    .def("getConstraintData", &SystemDefinition::getConstraintData)
+    .def("getConstraintData", &SystemDefinition::getConstraintData)*/
     .def("getIntegratorData", &SystemDefinition::getIntegratorData)
-    .def("getPairData", &SystemDefinition::getPairData)
+    //.def("getPairData", &SystemDefinition::getPairData)
+	
     .def("takeSnapshot_float", &SystemDefinition::takeSnapshot<float>)
     .def("takeSnapshot_double", &SystemDefinition::takeSnapshot<double>)
     .def("initializeFromSnapshot", &SystemDefinition::initializeFromSnapshot<float>)

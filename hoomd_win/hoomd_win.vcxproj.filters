@@ -120,6 +120,9 @@
     <ClInclude Include="DomainDecomposition.h">
       <Filter>Header Files\MPI</Filter>
     </ClInclude>
+    <ClInclude Include="SystemDefinition.h">
+      <Filter>Header Files\particles</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
@@ -175,6 +178,9 @@
     </ClCompile>
     <ClCompile Include="DomainDecomposition.cc">
       <Filter>Source Files\MPI</Filter>
+    </ClCompile>
+    <ClCompile Include="SystemDefinition.cc">
+      <Filter>Source Files\particles</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

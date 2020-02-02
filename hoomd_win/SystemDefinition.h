@@ -14,7 +14,7 @@
 
 #include "ParticleData.h"
 #include "IntegratorData.h"
-#include "BondedGroupData.h"
+//#include "BondedGroupData.h"
 
 #include <memory>
 #include <hoomd/extern/pybind/include/pybind11/pybind11.h>
@@ -104,6 +104,7 @@ class PYBIND11_EXPORT SystemDefinition
             {
             return m_particle_data;
             }
+		/*
         //! Get the bond data
         std::shared_ptr<BondData> getBondData() const
             {
@@ -130,19 +131,19 @@ class PYBIND11_EXPORT SystemDefinition
             {
             return m_constraint_data;
             }
-
+		*/
         //! Returns the integrator variables (if applicable)
         std::shared_ptr<IntegratorData> getIntegratorData()
             {
             return m_integrator_data;
             }
-
+		/*
         //! Get the pair data
         std::shared_ptr<PairData> getPairData() const
             {
             return m_pair_data;
             }
-
+		*/
         //! Return a snapshot of the current system data
         template <class Real>
         std::shared_ptr< SnapshotSystemData<Real> > takeSnapshot(bool particles= true,
@@ -161,13 +162,15 @@ class PYBIND11_EXPORT SystemDefinition
     private:
         unsigned int m_n_dimensions;                        //!< Dimensionality of the system
         std::shared_ptr<ParticleData> m_particle_data;    //!< Particle data for the system
+		/*
         std::shared_ptr<BondData> m_bond_data;            //!< Bond data for the system
         std::shared_ptr<AngleData> m_angle_data;          //!< Angle data for the system
         std::shared_ptr<DihedralData> m_dihedral_data;    //!< Dihedral data for the system
         std::shared_ptr<ImproperData> m_improper_data;    //!< Improper data for the system
         std::shared_ptr<ConstraintData> m_constraint_data;//!< Improper data for the system
+		*/
         std::shared_ptr<IntegratorData> m_integrator_data;    //!< Integrator data for the system
-        std::shared_ptr<PairData> m_pair_data;            //!< Special pairs data for the system
+        //std::shared_ptr<PairData> m_pair_data;            //!< Special pairs data for the system
     };
 
 //! Exports SystemDefinition to python

@@ -110,6 +110,7 @@
     <ClInclude Include="ParticleData.h" />
     <ClInclude Include="Profiler.h" />
     <ClInclude Include="SnapshotSystemData.h" />
+    <ClInclude Include="SystemDefinition.h" />
     <ClInclude Include="VectorMath.h" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +128,7 @@
     <ClCompile Include="ParticleData.cc" />
     <ClCompile Include="Profiler.cc" />
     <ClCompile Include="SnapshotSystemData.cc" />
+    <ClCompile Include="SystemDefinition.cc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
