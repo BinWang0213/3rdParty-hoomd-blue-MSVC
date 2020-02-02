@@ -91,12 +91,14 @@
     <ClInclude Include="BoxDim.h" />
     <ClInclude Include="CachedAllocator.h" />
     <ClInclude Include="ClockSource.h" />
+    <ClInclude Include="DomainDecomposition.h" />
     <ClInclude Include="ExecutionConfiguration.h" />
     <ClInclude Include="GlobalArray.h" />
     <ClInclude Include="GPUArray.h" />
     <ClInclude Include="GPUPartition.cuh" />
     <ClInclude Include="GPUVector.h" />
     <ClInclude Include="HOOMDMath.h" />
+    <ClInclude Include="HOOMDMPI.h" />
     <ClInclude Include="HOOMDVersion.h" />
     <ClInclude Include="Index1D.h" />
     <ClInclude Include="Initializers.h" />
@@ -112,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClockSource.cc" />
+    <ClCompile Include="DomainDecomposition.cc" />
     <ClCompile Include="ExecutionConfiguration.cc" />
     <ClCompile Include="HOOMDMath.cc" />
     <ClCompile Include="HOOMDVersion.cc" />

@@ -43,6 +43,9 @@
     <Filter Include="Source Files\utils\moderngpu">
       <UniqueIdentifier>{c17e52a4-99a5-4de1-b937-eeb6886cc719}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\MPI">
+      <UniqueIdentifier>{56dd6acc-32bd-41e3-a652-6f59e7825728}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUArray.h">
@@ -111,6 +114,12 @@
     <ClInclude Include="Index1D.h">
       <Filter>Header Files\common</Filter>
     </ClInclude>
+    <ClInclude Include="HOOMDMPI.h">
+      <Filter>Header Files\MPI</Filter>
+    </ClInclude>
+    <ClInclude Include="DomainDecomposition.h">
+      <Filter>Header Files\MPI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
@@ -163,6 +172,9 @@
     </ClCompile>
     <ClCompile Include="hoomd\extern\mgpuutil.cpp">
       <Filter>Source Files\utils\moderngpu</Filter>
+    </ClCompile>
+    <ClCompile Include="DomainDecomposition.cc">
+      <Filter>Source Files\MPI</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

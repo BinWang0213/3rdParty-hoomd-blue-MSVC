@@ -28,7 +28,7 @@
 #include "ExecutionConfiguration.h"
 #include "BoxDim.h"
 
-
+#include "HOOMDMPI.h"
 
 #include <memory>
 #include <hoomd/extern/nano-signal-slot/nano_signal_slot.hpp>
@@ -39,15 +39,13 @@
 
 #ifdef ENABLE_MPI
 #include "Index1D.h"
-#include "HOOMDMPI.h"
-#include "DomainDecomposition.h"
 #endif
 
+#include "DomainDecomposition.h"
 
 #include <stdlib.h>
 #include <vector>
 #include <map>
-#include <set>
 #include <string>
 #include <bitset>
 #include <stack>
@@ -406,8 +404,6 @@ struct pdata_element
 class PYBIND11_EXPORT ParticleData
     {
     public:
-
-#ifdef ENABLE_MPI
         //! Construct with N particles in the given box
         ParticleData(unsigned int N,
                      const BoxDim &global_box,
@@ -425,21 +421,7 @@ class PYBIND11_EXPORT ParticleData
                      std::shared_ptr<DomainDecomposition> decomposition
                         = std::shared_ptr<DomainDecomposition>()
                      );
-#else
-		//! Construct with N particles in the given box
-		ParticleData(unsigned int N,
-			const BoxDim &global_box,
-			unsigned int n_types,
-			std::shared_ptr<ExecutionConfiguration> exec_conf
-		);
 
-		//! Construct using a ParticleDataSnapshot
-		template<class Real>
-		ParticleData(const SnapshotParticleData<Real>& snapshot,
-			const BoxDim& global_box,
-			std::shared_ptr<ExecutionConfiguration> exec_conf
-		);
-#endif
         //! Destructor
         virtual ~ParticleData();
 

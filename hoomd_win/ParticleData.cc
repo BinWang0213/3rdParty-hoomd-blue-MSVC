@@ -54,11 +54,7 @@ namespace py = pybind11;
 
     Type mappings assign particle types "A", "B", "C", ....
 */
-#ifdef ENABLE_MPI
 ParticleData::ParticleData(unsigned int N, const BoxDim &global_box, unsigned int n_types, std::shared_ptr<ExecutionConfiguration> exec_conf, std::shared_ptr<DomainDecomposition> decomposition)
-#else
-ParticleData::ParticleData(unsigned int N, const BoxDim &global_box, unsigned int n_types, std::shared_ptr<ExecutionConfiguration> exec_conf)
-#endif
         : m_exec_conf(exec_conf),
           m_nparticles(0),
           m_nghosts(0),
@@ -143,18 +139,11 @@ ParticleData::ParticleData(unsigned int N, const BoxDim &global_box, unsigned in
  * \param decomposition (optional) Domain decomposition layout
  */
 template <class Real>
-#ifdef ENABLE_MPI
 ParticleData::ParticleData(const SnapshotParticleData<Real>& snapshot,
                            const BoxDim& global_box,
                            std::shared_ptr<ExecutionConfiguration> exec_conf,
                            std::shared_ptr<DomainDecomposition> decomposition
                           )
-#else
-ParticleData::ParticleData(const SnapshotParticleData<Real>& snapshot,
-	const BoxDim& global_box,
-	std::shared_ptr<ExecutionConfiguration> exec_conf
-)
-#endif
     : m_exec_conf(exec_conf),
       m_nparticles(0),
       m_nghosts(0),
@@ -2486,33 +2475,20 @@ string print_ParticleData(ParticleData *pdata)
     }
 
 // instantiate both float and double methods for snapshots
-#ifdef ENABLE_MPI
 template ParticleData::ParticleData(const SnapshotParticleData<double>& snapshot,
                                            const BoxDim& global_box,
                                            std::shared_ptr<ExecutionConfiguration> exec_conf,
                                            std::shared_ptr<DomainDecomposition> decomposition
                                           );
-#else
-template ParticleData::ParticleData(const SnapshotParticleData<double>& snapshot,
-	const BoxDim& global_box,
-	std::shared_ptr<ExecutionConfiguration> exec_conf
-);
-#endif
 template void ParticleData::initializeFromSnapshot<double>(const SnapshotParticleData<double> & snapshot, bool ignore_bodies);
 template std::map<unsigned int, unsigned int> ParticleData::takeSnapshot<double>(SnapshotParticleData<double> &snapshot);
 
-#ifdef ENABLE_MPI
+
 template ParticleData::ParticleData(const SnapshotParticleData<float>& snapshot,
                                            const BoxDim& global_box,
                                            std::shared_ptr<ExecutionConfiguration> exec_conf,
                                            std::shared_ptr<DomainDecomposition> decomposition
                                           );
-#else
-template ParticleData::ParticleData(const SnapshotParticleData<float>& snapshot,
-	const BoxDim& global_box,
-	std::shared_ptr<ExecutionConfiguration> exec_conf
-);
-#endif
 template void ParticleData::initializeFromSnapshot<float>(const SnapshotParticleData<float> & snapshot, bool ignore_bodies);
 template std::map<unsigned int, unsigned int> ParticleData::takeSnapshot<float>(SnapshotParticleData<float> &snapshot);
 
