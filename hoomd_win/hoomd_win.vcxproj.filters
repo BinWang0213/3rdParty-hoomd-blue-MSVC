@@ -52,6 +52,12 @@
     <Filter Include="Source Files\integration">
       <UniqueIdentifier>{ae459822-45ad-4953-b9be-e63a15c0b56e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\forces">
+      <UniqueIdentifier>{c5ab1292-0c63-4e4a-9ab6-3a1e5c36bc74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\forces">
+      <UniqueIdentifier>{d1e4b0d1-e7bb-431b-832b-883377a6f00f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GPUArray.h">
@@ -141,6 +147,24 @@
     <ClInclude Include="Updater.h">
       <Filter>Header Files\integration</Filter>
     </ClInclude>
+    <ClInclude Include="Integrator.h">
+      <Filter>Header Files\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="Integrator.cuh">
+      <Filter>Header Files\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceCompute.h">
+      <Filter>Header Files\forces</Filter>
+    </ClInclude>
+    <ClInclude Include="ForceConstraint.h">
+      <Filter>Header Files\forces</Filter>
+    </ClInclude>
+    <ClInclude Include="HalfStepHook.h">
+      <Filter>Header Files\integration</Filter>
+    </ClInclude>
+    <ClInclude Include="Compute.h">
+      <Filter>Header Files\forces</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="main.cpp" />
@@ -155,6 +179,9 @@
     </CudaCompile>
     <CudaCompile Include="ParticleGroup.cu">
       <Filter>Source Files\particles</Filter>
+    </CudaCompile>
+    <CudaCompile Include="Integrator.cu">
+      <Filter>Source Files\integration</Filter>
     </CudaCompile>
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +235,18 @@
     </ClCompile>
     <ClCompile Include="Updater.cc">
       <Filter>Source Files\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="Integrator.cc">
+      <Filter>Source Files\integration</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceCompute.cc">
+      <Filter>Source Files\forces</Filter>
+    </ClCompile>
+    <ClCompile Include="ForceConstraint.cc">
+      <Filter>Source Files\forces</Filter>
+    </ClCompile>
+    <ClCompile Include="Compute.cc">
+      <Filter>Source Files\forces</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

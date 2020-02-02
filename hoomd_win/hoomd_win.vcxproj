@@ -78,11 +78,13 @@
     <CudaCompile>
       <TargetMachinePlatform>64</TargetMachinePlatform>
       <CodeGeneration>compute_75,sm_75</CodeGeneration>
+      <Include>$(SolutionDir)$(ProjectName);</Include>
     </CudaCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CudaCompile Include="..\test\test_gpu_array.cu" />
     <CudaCompile Include="hoomd\extern\mgpucontext.cu" />
+    <CudaCompile Include="Integrator.cu" />
     <CudaCompile Include="main.cpp" />
     <CudaCompile Include="ParticleData.cu" />
     <CudaCompile Include="ParticleGroup.cu" />
@@ -92,17 +94,23 @@
     <ClInclude Include="BoxDim.h" />
     <ClInclude Include="CachedAllocator.h" />
     <ClInclude Include="ClockSource.h" />
+    <ClInclude Include="Compute.h" />
     <ClInclude Include="DomainDecomposition.h" />
     <ClInclude Include="ExecutionConfiguration.h" />
+    <ClInclude Include="ForceCompute.h" />
+    <ClInclude Include="ForceConstraint.h" />
     <ClInclude Include="GlobalArray.h" />
     <ClInclude Include="GPUArray.h" />
     <ClInclude Include="GPUPartition.cuh" />
     <ClInclude Include="GPUVector.h" />
+    <ClInclude Include="HalfStepHook.h" />
     <ClInclude Include="HOOMDMath.h" />
     <ClInclude Include="HOOMDMPI.h" />
     <ClInclude Include="HOOMDVersion.h" />
     <ClInclude Include="Index1D.h" />
     <ClInclude Include="Initializers.h" />
+    <ClInclude Include="Integrator.cuh" />
+    <ClInclude Include="Integrator.h" />
     <ClInclude Include="IntegratorData.h" />
     <ClInclude Include="MemoryTraceback.h" />
     <ClInclude Include="Messenger.h" />
@@ -120,12 +128,16 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ClockSource.cc" />
+    <ClCompile Include="Compute.cc" />
     <ClCompile Include="DomainDecomposition.cc" />
     <ClCompile Include="ExecutionConfiguration.cc" />
+    <ClCompile Include="ForceCompute.cc" />
+    <ClCompile Include="ForceConstraint.cc" />
     <ClCompile Include="HOOMDMath.cc" />
     <ClCompile Include="HOOMDVersion.cc" />
     <ClCompile Include="hoomd\extern\mgpuutil.cpp" />
     <ClCompile Include="Initializers.cc" />
+    <ClCompile Include="Integrator.cc" />
     <ClCompile Include="IntegratorData.cc" />
     <ClCompile Include="MemoryTraceback.cc" />
     <ClCompile Include="Messenger.cc" />
