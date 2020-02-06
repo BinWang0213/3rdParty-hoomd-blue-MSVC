@@ -9,7 +9,7 @@
 #include <sstream>
 #include <fstream>
 
-#include "Messenger.h"
+#include "hoomd/Messenger.h"
 
 using namespace std;
 

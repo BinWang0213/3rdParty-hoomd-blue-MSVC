@@ -7,7 +7,7 @@
 
 #include <iostream>
 
-#include "Index1D.h"
+#include "hoomd/Index1D.h"
 
 using namespace std;
 
